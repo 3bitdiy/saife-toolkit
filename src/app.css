@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Inter var";
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: "Regular";
+    src: local("./fonts/Inter-roman.var.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Inter var";
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+    font-named-instance: "Italic";
+    src: local("./fonts/Inter-italic.var.woff2") format("woff2");
+  }
+
+  html {
+    @apply min-h-screen;
+  }
+
+  body {
+    @apply font-sans bg-blue-light text-blue;
+    font-size: 16px;
+  }
+
+  a {
+    @apply cursor-pointer font-bold focus-ring transition-all border-none border-b-2 border-blue hover:border-solid;
+    max-width: fit-content;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-5xl xl:max-w-7xl px-4 self-center;
+  }
+
+  .header-light {
+    @apply bg-white bg-no-repeat;
+    background-image: url("/images/header-light.png");
+  }
+
+  .header-dark {
+    @apply bg-blue bg-repeat;
+    background-image: url("/images/header-dark.png");
+  }
+
+  .shadow-box {
+    --tw-shadow-colored: -10px 10px 0 0 var(--tw-shadow-color),
+      0 8px 10px -6px var(--tw-shadow-color);
+
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+      var(--tw-shadow);
+  }
+
+  ol.policy {
+    list-style: none;
+    counter-reset: mypolicy-counter;
+  }
+  ol.policy li {
+    @apply relative mt-4 pl-14;
+    counter-increment: policy-counter;
+  }
+  ol.policy li::before {
+    @apply absolute left-0 px-2 py-1 text-blue bg-white rounded-md font-bold w-11 text-center;
+    content: counter(policy-counter) ".";
+  }
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-osce focus:ring-offset-transparent;
+  }
+
+  .focus-within-ring {
+    @apply focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-osce focus-within:ring-offset-white;
+  }
+
+  .focus-ring-inset {
+    @apply focus-ring focus:ring-inset;
+  }
+
+  .fgoto {
+    /* don't use this with <sup>... one or the other.*/
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.3em;
+    vertical-align: super;
+  }
+}
+
+.fgoto {
+  @apply ml-1 mr-0.5;
+  @apply hover:bg-white hover:text-blue-osce !important;
+  @apply no-underline !important;
+}
+/* Footnote return */
+.freturn {
+  @apply ml-2;
+  @apply text-gray-200 hover:bg-gray-400 hover:bg-gray-400 hover:text-black !important;
+  @apply no-underline !important;
+}

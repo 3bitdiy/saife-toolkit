@@ -1,0 +1,110 @@
+{
+  "private": true,
+  "name": "saife",
+  "version": "0.0.1",
+  "license": "GPL-3.0",
+  "contributors": [
+    "Christo Buschek <christo.buschek@proton.me>"
+  ],
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf build",
+    "precompile": "npm run clean",
+    "compile": "run-p --aggregate-output --continue-on-error 'compile:!(dev)'",
+    "compile:svelte": "vite build",
+    "data": "run-p --aggregate-output --continue-on-error data:*",
+    "data:google": "npm run indexctl google",
+    "fix": "run-p --aggregate-output --continue-on-error lint:*:fix",
+    "indexctl": "TS_NODE_TRANSPILE_ONLY=true node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm src/indexctl.ts",
+    "lint": "run-p --aggregate-output --continue-on-error 'lint:!(fix)'",
+    "lint:eslint": "eslint --cache --ignore-path .gitignore .",
+    "lint:eslint:fix": "npm run lint:eslint -- --fix",
+    "lint:json": "prettier -c --parser json **/*.json",
+    "lint:json:fix": "prettier -w --parser json **/*.json",
+    "lint:package.json": "prettier-package-json -l",
+    "lint:package.json:fix": "prettier-package-json --write",
+    "lint:prettier": "prettier -c --plugin-search-dir=. ./src/**/*.svelte",
+    "lint:prettier:fix": "prettier -w --plugin-search-dir=. ./**/*.svelte",
+    "lint:svelte": "svelte-check",
+    "lint:tsc": "tsc --noEmit",
+    "prepare": "husky install",
+    "start": "vite dev",
+    "watch": "run-p --continue-on-error watch:*",
+    "watch:eslint": "esw -w --cache --ignore-path .gitignore --ext .svelte,.ts,.js .",
+    "watch:svelte": "svelte-check --watch",
+    "watch:tsc": "tsc --noEmit --watch"
+  },
+  "dependencies": {
+    "@sindresorhus/slugify": "^2.1.0",
+    "@types/cheerio": "^0.22.31",
+    "cheerio": "^1.0.0-rc.11",
+    "clsx": "^1.1.1",
+    "csv-parse": "^5.1.0",
+    "googleapis": "^100.0.0",
+    "lodash": "^4.17.21",
+    "unzipper": "^0.10.11",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "=2.1",
+    "@sveltejs/adapter-static": "=2.0",
+    "@sveltejs/enhanced-img": "^0.1.1",
+    "@sveltejs/kit": "=1.27",
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^17.0.40",
+    "@types/unzipper": "^0.10.5",
+    "@types/yargs": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.11",
+    "eslint": "^8.53.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-svelte": "^2.34.1",
+    "eslint-plugin-unicorn": "^49.0.0",
+    "eslint-watch": "^8.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-load-config": "^4.0.1",
+    "postcss-preset-env": "^7.7.1",
+    "prettier": "^2.8.0",
+    "prettier-package-json": "^2.6.3",
+    "prettier-plugin-svelte": "^2.10.1",
+    "rimraf": "^3.0.2",
+    "svelte": "=4.2",
+    "svelte-check": "^3.5.2",
+    "svelte-language-server": "^0.15.20",
+    "svelte-preprocess": "^5.0.4",
+    "tailwindcss": "^3.3.5",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.3.1",
+    "typescript": "~5.2.2",
+    "typescript-language-server": "^4.0.0",
+    "vite": "^4.4.2"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ],
+  "lint-staged": {
+    "*.{js,ts,svelte}": [
+      "eslint --ignore-path .gitignore"
+    ],
+    "package.json": [
+      "prettier-package-json -l"
+    ],
+    "*.{json,rc}": [
+      "prettier -c --parser json"
+    ]
+  }
+}

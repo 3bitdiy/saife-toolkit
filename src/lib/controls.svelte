@@ -1,0 +1,69 @@
+<script lang="ts">
+  import {beforeNavigate} from "$app/navigation";
+  import {base} from "$app/paths";
+  import Hamburger from "$lib/hamburger-icon.svelte";
+  import Home from "$lib/home-icon.svelte";
+
+  let isOpen = false;
+  let container: HTMLDivElement;
+
+  // FIXME: This type is not found.
+  const onWindowClick: MouseEventHandler<Window> = (e) => {
+    if (container.contains(e.target) === false) {
+      isOpen = false;
+    }
+  };
+
+  const toggleDropdown = () => {
+    isOpen = !isOpen;
+  };
+
+  const closeDropdown = () => {
+    isOpen = false;
+  };
+
+  const menuItems = [
+    {description: "About the OSCE #SAIFE project", href: `${base}/about`, type: "item"},
+    {description: "Intro essay", href: `${base}/essay`, type: "item"},
+    {type: "divider"},
+    {description: "Policy manual", href: `${base}/policy`, type: "item"},
+    {description: "Dos and dont's", href: `${base}/dos-and-donts`, type: "item"},
+    {description: "Resources", href: `${base}/resources`, type: "item"},
+    {description: "Masterclass", href: `${base}/masterclass`, type: "item"},
+    {description: "Made to Measure", href: "https://www.madetomeasure.online/en/", type: "item"},
+    {description: "SAIFE Expedition", href: `${base}/expedition`, type: "item"},
+    {type: "divider"},
+    {description: "Glossary", href: `${base}/glossary`, type: "item"},
+  ];
+
+  beforeNavigate(closeDropdown);
+</script>
+
+<svelte:window on:click|preventDefault={onWindowClick} />
+
+<div bind:this={container} class="bg-white flex items-center space-x-6 px-6 relative">
+  <a href={`${base}`}>
+    <Home class="h-4 w-4" />
+  </a>
+
+  <button on:click={toggleDropdown}>
+    <Hamburger class="h-4 w-4" />
+  </button>
+
+  {#if isOpen}
+    <div class="absolute right-0 top-[60px] w-80 py-2 bg-white grid justify-items-end">
+      {#each menuItems as item}
+        {#if item.type === "item"}
+          <a
+            href={item.href}
+            class="w-100 px-4 py-2 text-blue-osce hover:border-none whitespace-nowrap"
+          >
+            {item.description}
+          </a>
+        {:else if item.type === "divider"}
+          <hr class="w-72 h-[1px] mx-auto my-4 bg-blue-osce border-0 md:my-6" />
+        {/if}
+      {/each}
+    </div>
+  {/if}
+</div>
