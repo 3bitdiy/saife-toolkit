@@ -14,6 +14,16 @@ App runs at:
 
     http://localhost:5173/
 
+## Data Tools
+
+Scripts for fetching and indexing external data sources:
+
+```bash
+npm run data
+npm run data:google
+npm run indexctl -- <arguments>
+```
+
 ## Building
 
 Clean previous build artifacts:
@@ -36,22 +46,6 @@ Serve the production build locally:
 npx serve build
 ```
 
-````md
-## Data Tools
-
-Scripts for fetching and indexing external data sources:
-
-```bash
-npm run data
-npm run data:google
-npm run indexctl -- <arguments>
-```
-````
-
-## License
-
-GPL-3.0
-
 ## Author
 
-- Christo Buschek
+Christo Buschek
