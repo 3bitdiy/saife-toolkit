@@ -45,6 +45,3 @@ fixtures
 .vscode
 
 !.keep
-static/images
-static/videos
-static/pdfs
