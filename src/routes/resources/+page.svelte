@@ -7,7 +7,9 @@
 
   import type {PageData} from "./$types";
 
-  const images = import.meta.glob("../../data/resources/*.jpg", {
+  //const images = import.meta.glob("../../data/resources/*.jpg", {
+  //const images = import.meta.glob("../../data/resources/*.{jpg,jpeg,png}", {
+  const images = import.meta.glob("../../data/resources/*.*", {
     query: {
       enhanced: true,
     },

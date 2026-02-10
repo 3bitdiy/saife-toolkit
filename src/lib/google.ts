@@ -7,7 +7,7 @@ import unzipper from "unzipper";
 
 import type {Glossary} from "../types";
 import {glossary, processHtml} from "./formatter";
-import {isString,memoize, unreachable} from "./utils";
+import {isString, memoize, unreachable} from "./utils";
 
 type GoogleDocDownload = {
   target: string;
@@ -43,8 +43,10 @@ type Document = {
  * The ID's of the Google Drive folders. Maybe move this into some
  * configuration file?
  */
-const rootFolder = "1kxJTx35-_MbpmcKUfb4yPGiE6X6rElGm";
-const glossaryFolder = "1G_o3zLDfOFvRitGrewgBxb9iOywkdCHn";
+// const rootFolder = "1kxJTx35-_MbpmcKUfb4yPGiE6X6rElGm";
+// const glossaryFolder = "1G_o3zLDfOFvRitGrewgBxb9iOywkdCHn";
+const rootFolder = "1QzCMN39Qy_nVMORAmFiIJy8aVOoJCVmu";
+const glossaryFolder = "1z1_vUY0B413zU2BOZA3JtELaSZQ_yOQA";
 
 // The scopes we require to have the right permissions.
 const SCOPES = ["https://www.googleapis.com/auth/drive.readonly"];
@@ -341,6 +343,12 @@ export const dosAndDonts = async (): Promise<SheetRecord[]> => {
   const auth = getAuth();
   const googleDocs = await listFiles(auth, rootFolder);
 
+  // checking for errors
+  console.log(
+    "Files in rootFolder:",
+    googleDocs.map((d) => `${d.kind}:${d.name}`),
+  );
+
   const sheet = googleDocs.find(({name}) => name === "Dos and Don'ts");
 
   if (!sheet) {
@@ -369,14 +377,15 @@ export const glossaries = async (): Promise<Glossary[]> => {
   );
 };
 
+// changed name === "Resources" to "Resources Image URL Fixed"
 export const resources = async (): Promise<SheetRecord[]> => {
   const auth = getAuth();
   const googleDocs = await listFiles(auth, rootFolder);
 
-  const sheet = googleDocs.find(({name}) => name === "Resources");
+  const sheet = googleDocs.find(({name}) => name === "Resources Image URL Fixed");
 
   if (!sheet) {
-    throw new Error("'Resources' spreadsheet not found.");
+    throw new Error("'Resources Image URL Fixed' spreadsheet not found.");
   }
 
   const csv = await fetchSpreadsheetCsv(auth, sheet);

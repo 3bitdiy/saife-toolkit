@@ -4,7 +4,7 @@ import {hideBin} from "yargs/helpers";
 import yargs from "yargs/yargs";
 
 import {mkdir, writeJsonFile} from "./lib/fs";
-import {dosAndDonts, fetchImage, glossaries, type GoogleDoc,resources} from "./lib/google";
+import {dosAndDonts, fetchImage, glossaries, type GoogleDoc, resources} from "./lib/google";
 
 const dataDir = "src/data";
 const resourcesDir = path.join(dataDir, "resources");
