@@ -2,6 +2,7 @@
   import CommonHeader from "$lib/common-header.svelte";
   import ShadowBox from "$lib/shadow-box.svelte";
   import {base} from "$app/paths";
+  import madeToMeasure from "$lib/assets/made-to-measure.png";
 </script>
 
 <CommonHeader
@@ -167,7 +168,7 @@
     <a href="https://www.madetomeasure.online/en/" target="_blank" rel="noopener noreferrer">
       <img
         class="mb-4 w-full object-cover rounded-lg transition-transform duration-200 hover:scale-105"
-        src="/src/lib/assets/made-to-measure.png"
+        src={madeToMeasure}
         alt="Made to Measure"
       />
     </a>
