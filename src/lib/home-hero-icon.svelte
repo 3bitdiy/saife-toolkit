@@ -1,8 +1,8 @@
 <script lang="ts">
-  // No props needed, purely presentational
+  import {base} from "$app/paths";
 </script>
 
-<a href="/" aria-label="Home">
+<a href={`${base}/`} aria-label="Home">
   <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="48" height="48" rx="8" class="home-icon-bg" />
     <g clip-path="url(#clip0_4978_285)">
