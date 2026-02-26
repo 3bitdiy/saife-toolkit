@@ -7,7 +7,6 @@
   import madeToMeasureImage from "$lib/assets/made-to-measure.png";
   import expeditionImage from "$lib/assets/saife-expedition.png";
   import saifeLogo from "$lib/assets/saife-logo.png";
-  import osceLogo from "$lib/assets/osce-logo.png";
   import Chevron from "$lib/chevron.svelte";
   import GlossaryIcon from "$lib/glossary-icon.svelte";
   import Header from "$lib/header.svelte";
