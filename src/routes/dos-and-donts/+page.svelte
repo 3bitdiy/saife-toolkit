@@ -1,6 +1,7 @@
 <script lang="ts">
   import {base} from "$app/paths";
   import CommonHeader from "$lib/common-header.svelte";
+  import HomeHeroIcon from "$lib/home-hero-icon.svelte";
   import Do from "$lib/do.svelte";
   import DoDontBox from "$lib/do-dont-box.svelte";
   import Dont from "$lib/dont.svelte";
@@ -13,8 +14,9 @@
 <CommonHeader
   title="Recommended actions, restrictions, and guidelines for designing human rights-respecting policies on (generative) AI and digital technologies"
 >
+  <HomeHeroIcon slot="icon" />
   <svelte:fragment>
-    <p class="font-medium leading-5">
+    <p class="text-blue-osce font-medium leading-5">
       Key principles to consider when developing strategies and policies on (generative) AI and
       digital technologies. Click <a
         href="https://rfom.osce.org/representative-on-freedom-of-media/510332"

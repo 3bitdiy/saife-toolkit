@@ -1,9 +1,11 @@
 <script lang="ts">
   import CommonHeader from "$lib/common-header.svelte";
+  import HomeHeroIcon from "$lib/home-hero-icon.svelte";
   import Box from "$lib/expedition-box.svelte";
 </script>
 
 <CommonHeader title="SAIFE Expedition">
+  <HomeHeroIcon slot="icon" />
   <p class="font-medium leading-5">
     Additional resources for the SAIFE Expedition Conference: “Spotlight on AI and Freedom of
     Expression: A SAIFE Expedition | OSCE.”

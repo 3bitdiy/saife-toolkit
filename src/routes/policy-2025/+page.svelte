@@ -1,10 +1,12 @@
 <script lang="ts">
   import CommonHeader from "$lib/common-header.svelte";
+  import HomeHeroIcon from "$lib/home-hero-icon.svelte";
 </script>
 
 <CommonHeader
   title="Policy Manual on Safeguarding Media Freedom in the Age of Big Tech Platforms and AI (2025)"
 >
+  <HomeHeroIcon slot="icon" />
   <p class="font-medium leading-5">
     This publication is part of the project “Healthy Online Information Spaces” and was published in
     2025. It can be downloaded

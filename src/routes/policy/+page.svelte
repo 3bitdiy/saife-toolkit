@@ -1,11 +1,13 @@
 <script lang="ts">
   import CommonHeader from "$lib/common-header.svelte";
+  import HomeHeroIcon from "$lib/home-hero-icon.svelte";
 </script>
 
 <CommonHeader
   title="Spotlight on Artificial Intelligence and Freedom of Expression – A Policy Manual"
 >
-  <p class="font-medium leading-5">
+  <HomeHeroIcon slot="icon" />
+  <p class="text-blue-osce font-medium leading-5">
     This publication is part of the project “Spotlight on Artificial Intelligence and Freedom of
     Expression” (#SAIFE) and was presented in 2022.
   </p>

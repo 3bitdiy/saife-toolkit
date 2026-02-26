@@ -40,7 +40,7 @@
 
 <svelte:window on:click={onWindowClick} />
 
-<div bind:this={container} class="bg-white flex items-center space-x-6 px-6 relative">
+<div bind:this={container} class="bg-white flex items-center relative">
   <!-- <a href={`${base}`}> -->
   <a href={base || "/"}>
     <Home class="h-4 w-4" />

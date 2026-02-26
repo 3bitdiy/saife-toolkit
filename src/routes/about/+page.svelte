@@ -1,12 +1,14 @@
 <script lang="ts">
   import Chevron from "$lib/chevron.svelte";
+  import HomeHeroIcon from "$lib/home-hero-icon.svelte";
   import CommonHeader from "$lib/common-header.svelte";
   import ShadowBox from "$lib/shadow-box.svelte";
   import {base} from "$app/paths";
 </script>
 
 <CommonHeader title="Spotlight on Artificial Intelligence and Freedom of Expression (#SAIFE)">
-  <p class="font-medium leading-5">Towards Healthy Online Information Spaces</p>
+  <HomeHeroIcon slot="icon" />
+  <p class="text-blue-osce font-medium leading-5">Towards Healthy Online Information Spaces</p>
 </CommonHeader>
 
 <main class="container mx-auto py-12 px-4">

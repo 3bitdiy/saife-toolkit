@@ -5,26 +5,44 @@
   export {clazz as class};
 </script>
 
-<svg class={c(clazz)} viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="60" height="60" class="hamburger-icon-bg" />
   <path
-    d="M1 1H14"
-    stroke="#335290"
-    stroke-width="2"
+    d="M21.875 23.6201H38.125"
+    class="hamburger-icon-path"
+    stroke-width="2.5"
     stroke-linecap="round"
     stroke-linejoin="round"
   />
   <path
-    d="M1 6H14"
-    stroke="#335290"
-    stroke-width="2"
+    d="M21.875 29.8701H38.125"
+    class="hamburger-icon-path"
+    stroke-width="2.5"
     stroke-linecap="round"
     stroke-linejoin="round"
   />
   <path
-    d="M1 11H14"
-    stroke="#335290"
-    stroke-width="2"
+    d="M21.875 36.1201H38.125"
+    class="hamburger-icon-path"
+    stroke-width="2.5"
     stroke-linecap="round"
     stroke-linejoin="round"
   />
 </svg>
+
+<style>
+  .hamburger-icon-bg {
+    fill: white;
+    transition: fill 0.2s;
+  }
+  .hamburger-icon-path {
+    stroke: rgb(36, 57, 101);
+    transition: stroke 0.2s;
+  }
+  svg:hover .hamburger-icon-bg {
+    fill: rgb(36, 57, 101);
+  }
+  svg:hover .hamburger-icon-path {
+    stroke: white;
+  }
+</style>

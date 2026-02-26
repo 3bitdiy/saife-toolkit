@@ -1,10 +1,12 @@
 <script lang="ts">
   import {base} from "$app/paths";
   import CommonHeader from "$lib/common-header.svelte";
+  import HomeHeroIcon from "$lib/home-hero-icon.svelte";
   import Box from "$lib/expedition-box.svelte";
 </script>
 
 <CommonHeader title="Healthy Online Information Spaces: From Policy Guidance to Pathways Forward">
+  <HomeHeroIcon slot="icon" />
   <p class="font-medium leading-5">
     Conference held on 22 October 2025, Hofburg (Vienna), as part of the RFoM project “Towards
     Healthy Online Information Spaces”.

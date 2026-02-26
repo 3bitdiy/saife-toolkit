@@ -1,5 +1,6 @@
 <script lang="ts">
   import CommonHeader from "$lib/common-header.svelte";
+  import HomeHeroIcon from "$lib/home-hero-icon.svelte";
   import ShadowBox from "$lib/shadow-box.svelte";
   import {base} from "$app/paths";
   import madeToMeasure from "$lib/assets/made-to-measure.png";
@@ -8,7 +9,12 @@
 <CommonHeader
   title="Freedom of expression in the age of artificial intelligence:
   the risks and challenges to online speech and media freedom"
-/>
+>
+  <HomeHeroIcon slot="icon" />
+  <!-- <p class="text-blue-osce font-medium leading-5">
+    Subtitle
+  </p> -->
+</CommonHeader>
 
 <main class="container mx-auto py-12 px-4">
   <p class="mb-4 leading-6">

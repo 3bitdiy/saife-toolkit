@@ -2,6 +2,7 @@
   import c from "clsx";
 
   import CategoryTag from "$lib/category-tag.svelte";
+  import HomeHeroIcon from "$lib/home-hero-icon.svelte";
   import CommonHeader from "$lib/common-header.svelte";
   import ResourceBox from "$lib/resource-box.svelte";
 
@@ -30,7 +31,8 @@
 </script>
 
 <CommonHeader title="Key resources: AI and freedom of expression">
-  <p class="font-medium leading-5">
+  <HomeHeroIcon slot="icon" />
+  <p class="text-blue-osce font-medium leading-5">
     The use of AI systems by digital platforms is radically reshaping our information ecosystems and
     playing a critical role in determining what we read, see, and share online. The following is a
     repository of essential resources, research, podcasts, videos, and other materials from experts
