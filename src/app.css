@@ -122,3 +122,8 @@ a.freturn {
   font-variant: normal;
   unicode-bidi: normal;
 }
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1024px !important;
+  }
+}
