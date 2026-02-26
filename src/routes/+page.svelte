@@ -94,7 +94,7 @@
         <HomeGlossaryBox title="Resources" href={`${base}/resources`}>
           <img
             slot="image"
-            class="w-full aspect-[387/191] rounded-xl object-cover"
+            class="w-full aspect-[395/238] rounded-xl object-cover"
             src={resourcesImage}
             alt="Resources"
           />
@@ -107,7 +107,7 @@
         <HomeGlossaryBox title="Do’s and Don’ts" href={`${base}/dos-and-donts`}>
           <img
             slot="image"
-            class="w-full aspect-[387/191] rounded-xl object-cover"
+            class="w-full aspect-[395/238] rounded-xl object-cover"
             src={dosAndDontsImage}
             alt="Do's and Dont's"
           />
@@ -123,7 +123,7 @@
         >
           <img
             slot="image"
-            class="w-full aspect-[387/191] rounded-xl object-cover"
+            class="w-full aspect-[387/230] rounded-xl object-cover"
             src={policyManualImage2025}
             alt="Policy Manual on Safeguarding Media Freedom in the Age of Big Tech Platforms and AI (2025)"
           />
@@ -140,7 +140,7 @@
         >
           <img
             slot="image"
-            class="w-full aspect-[387/191] rounded-xl object-cover"
+            class="w-full aspect-[387/230] rounded-xl object-cover"
             src={conferenceImage2025}
             alt="Conference on “Healthy Online Information Spaces: From Policy Guidance to Pathways Forward”"
           />
@@ -157,7 +157,7 @@
         >
           <img
             slot="image"
-            class="w-full aspect-[387/191] rounded-xl object-cover"
+            class="w-full aspect-[409/280] rounded-xl object-cover"
             src={policyManualImage}
             alt="Policy Manual"
           />
@@ -170,7 +170,7 @@
         <HomeGlossaryBox title="SAIFE Expedition" href={`${base}/expedition`}>
           <img
             slot="image"
-            class="w-full aspect-[387/191] rounded-xl object-cover"
+            class="w-full aspect-[409/280] rounded-xl object-cover"
             src={expeditionImage}
             alt="SAIFE Expedition"
           />
