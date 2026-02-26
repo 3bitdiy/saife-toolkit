@@ -10,12 +10,23 @@
   export let data: PageData;
 </script>
 
-<CommonHeader title="Dos and don’ts: A first step toward AI policies">
+<CommonHeader
+  title="Recommended actions, restrictions, and guidelines for designing human rights-respecting policies on (generative) AI and digital technologies"
+>
   <svelte:fragment>
     <p class="font-medium leading-5">
-      Key principles to consider when developing AI strategies and policies. <a
-        href={`${base}/policy`}>Click here</a
-      > for more recommendations on safeguarding freedom of expression in the use of AI for content governance.
+      Key principles to consider when developing strategies and policies on (generative) AI and
+      digital technologies. Click <a
+        href="https://rfom.osce.org/representative-on-freedom-of-media/510332"
+        target="_blank">here</a
+      >
+      for more recommendations on safeguarding freedom of expression in the use of AI for content governance,
+      and
+      <a href="https://rfom.osce.org/representative-on-freedom-of-media/598525" target="_blank"
+        >here</a
+      >
+      for recommendations on promoting media freedom and public interest journalism in the age of Big
+      Tech and AI.
     </p>
   </svelte:fragment>
 </CommonHeader>

@@ -1,3 +1,8 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  .object-contain-md {
+    object-fit: contain !important;
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -106,4 +111,14 @@
   @apply ml-2;
   @apply text-gray-200 hover:bg-gray-400 hover:bg-gray-400 hover:text-black !important;
   @apply no-underline !important;
+}
+.freturn {
+  font-family: "Inter var", Arial, sans-serif;
+  font-variant: normal;
+  unicode-bidi: normal;
+}
+a.freturn {
+  font-family: inherit;
+  font-variant: normal;
+  unicode-bidi: normal;
 }

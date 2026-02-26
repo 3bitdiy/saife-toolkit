@@ -2,27 +2,25 @@
   import CommonHeader from "$lib/common-header.svelte";
 </script>
 
-<CommonHeader title="Policy Manual">
+<CommonHeader
+  title="Spotlight on Artificial Intelligence and Freedom of Expression – A Policy Manual"
+>
   <p class="font-medium leading-5">
     This publication is part of the project “Spotlight on Artificial Intelligence and Freedom of
-    Expression” (#SAIFE).
+    Expression” (#SAIFE) and was presented in 2022.
   </p>
 </CommonHeader>
 
 <main class="container mx-auto py-12 px-4">
+  <!-- <p class="mb-8 font-bold"> -->
   <h2 class="font-extrabold text-3xl leading-9 my-12">
-    Introduction: Upholding the Principles of the Helsinki Final Act in the Digital Age
+    The Policy Manual can be downloaded <a
+      href="https://rfom.osce.org/representative-on-freedom-of-media/510332"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="underline text-blue-osce">here</a
+    >.
   </h2>
-
-  <p class="mb-4">
-    Last year saw the 45th anniversary of the signature of the 1975 Helsinki Final Act. That Act,
-    the outcome of the First CSCE Summit of Heads of State or Government, has become a cornerstone
-    of Europe’s political order. Eastern and Western states together agreed on ten principles that
-    would guide their behaviour, including respect for sovereign equality and, in Principle VII,
-    mutual respect for human rights and fundamental freedoms. The Helsinki Final Act further
-    contains commitments on cooperation among states, including scientific and technological
-    cooperation ...
-  </p>
 
   <h2 class="font-extrabold text-3xl leading-9 my-12">
     Key Recommendations for OSCE Participating States

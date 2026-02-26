@@ -8,6 +8,7 @@
   ],
   "type": "module",
   "scripts": {
+    "build": "npm run compile:svelte",
     "clean": "rimraf build",
     "precompile": "npm run clean",
     "compile": "run-p --aggregate-output --continue-on-error 'compile:!(dev)'",

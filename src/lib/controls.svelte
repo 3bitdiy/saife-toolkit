@@ -7,9 +7,8 @@
   let isOpen = false;
   let container: HTMLDivElement;
 
-  // FIXME: This type is not found.
-  const onWindowClick: MouseEventHandler<Window> = (e) => {
-    if (container.contains(e.target) === false) {
+  const onWindowClick = (e: MouseEvent) => {
+    if (container && !container.contains(e.target as Node)) {
       isOpen = false;
     }
   };
@@ -24,7 +23,7 @@
 
   const menuItems = [
     {description: "About the OSCE #SAIFE project", href: `${base}/about`, type: "item"},
-    {description: "Intro essay", href: `${base}/essay`, type: "item"},
+    {description: "Learn More About This Resource Hub", href: `${base}/essay`, type: "item"},
     {type: "divider"},
     {description: "Policy manual", href: `${base}/policy`, type: "item"},
     {description: "Dos and dont's", href: `${base}/dos-and-donts`, type: "item"},
@@ -39,10 +38,11 @@
   beforeNavigate(closeDropdown);
 </script>
 
-<svelte:window on:click|preventDefault={onWindowClick} />
+<svelte:window on:click={onWindowClick} />
 
 <div bind:this={container} class="bg-white flex items-center space-x-6 px-6 relative">
-  <a href={`${base}`}>
+  <!-- <a href={`${base}`}> -->
+  <a href={base || "/"}>
     <Home class="h-4 w-4" />
   </a>
 
