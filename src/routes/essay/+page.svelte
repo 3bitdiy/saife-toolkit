@@ -242,10 +242,10 @@
     </h3>
     <div class="group flex flex-row items-center space-x-2 mb-4">
       <p class="w-10/12">
-        Read the <a href="/dos-and-donts">Dos and Don’ts</a> summarizing key points that policy makers
-        should take into consideration as they develop AI strategies and policies.
+        Read the <a href={`${base}/dos-and-donts`}>Dos and Don’ts</a> summarizing key points that policy
+        makers should take into consideration as they develop AI strategies and policies.
       </p>
-      <a href="/dos-and-donts" class="group flex items-center hover:border-none"
+      <a href={`${base}/dos-and-donts`} class="group flex items-center hover:border-none"
         ><span class="rounded-full border-2 border-blue p-2 shrink-0"
           ><svg
             class="w-6 h-6 stroke-blue-osce transition-transform duration-300 group-hover:translate-x-1"
@@ -264,11 +264,11 @@
     </div>
     <div class="group flex flex-row items-center space-x-2 mb-4">
       <p class="w-10/12">
-        Go to <a href="/resources">Resources</a> to explore key readings, research, and materials on
-        how AI systems are being developed and deployed and the impact this has on freedom of expression
+        Go to <a href={`${base}/resources`}>Resources</a> to explore key readings, research, and materials
+        on how AI systems are being developed and deployed and the impact this has on freedom of expression
         and media freedom.
       </p>
-      <a href="/resources" class="group flex items-center hover:border-none"
+      <a href={`${base}/resources`} class="group flex items-center hover:border-none"
         ><span class="rounded-full border-2 border-blue p-2 shrink-0"
           ><svg
             class="w-6 h-6 stroke-blue-osce transition-transform duration-300 group-hover:translate-x-1"
@@ -287,13 +287,13 @@
     </div>
     <div class="group flex flex-row items-center space-x-2 mb-4">
       <p class="w-10/12">
-        Read the <a href="/policy-2025"
+        Read the <a href={`${base}/policy-2025`}
           >Policy Manual to Safeguards Media Freedom in the Age of Big Tech Platforms and AI (2025)</a
         >
-        and the <a href="/policy">SAIFE Policy Manual (2022)</a> for how to develop human-rights centered
-        AI policies that protect freedom of expression and media pluralism.
+        and the <a href={`${base}/policy`}>SAIFE Policy Manual (2022)</a> for how to develop human-rights
+        centered AI policies that protect freedom of expression and media pluralism.
       </p>
-      <a href="/policy" class="group flex items-center hover:border-none"
+      <a href={`${base}/policy`} class="group flex items-center hover:border-none"
         ><span class="rounded-full border-2 border-blue p-2 shrink-0"
           ><svg
             class="w-6 h-6 stroke-blue-osce transition-transform duration-300 group-hover:translate-x-1"

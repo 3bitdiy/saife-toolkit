@@ -47,7 +47,10 @@
           allowfullscreen
         />
       </div>
-      <p class="mt-4"><a href="/policy" class="text-blue-osce">Policy Manual</a></p>
+      <p class="mt-4"><a href={`${base}/policy`} class="text-blue-osce">Policy Manual</a></p>
+    <script>
+      import { base } from "$app/paths";
+    </script>
     </div>
   </Box>
 
