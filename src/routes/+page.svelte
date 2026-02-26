@@ -188,7 +188,7 @@
         >
           <img
             slot="image"
-            class="w-full aspect-[798/392] rounded-xl object-cover"
+            class="w-full aspect-[708/280] rounded-xl object-cover"
             src={madeToMeasureImage}
             alt="Made to Measure"
           />
