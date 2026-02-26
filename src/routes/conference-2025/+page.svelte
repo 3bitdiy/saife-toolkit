@@ -1,4 +1,5 @@
 <script lang="ts">
+  import {base} from "$app/paths";
   import CommonHeader from "$lib/common-header.svelte";
   import Box from "$lib/expedition-box.svelte";
 </script>
@@ -48,9 +49,6 @@
         />
       </div>
       <p class="mt-4"><a href={`${base}/policy`} class="text-blue-osce">Policy Manual</a></p>
-    <script>
-      import { base } from "$app/paths";
-    </script>
     </div>
   </Box>
 
