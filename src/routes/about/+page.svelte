@@ -99,7 +99,10 @@
         <span
           >See the <a href={`${base}/glossary`}>Glossary</a> to read more about these terms.</span
         >
-        <a href="${base}/glossary" class="ml-4 group flex items-center space-x-2 hover:border-none">
+        <a
+          href={`${base}/glossary`}
+          class="ml-4 group flex items-center space-x-2 hover:border-none"
+        >
           <span class="rounded-full border-2 border-blue p-2 shrink-0">
             <Chevron
               class="w-6 h-6 stroke-blue-osce transition-transform duration-300 group-hover:translate-x-1"
