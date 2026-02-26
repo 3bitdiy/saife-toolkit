@@ -4,7 +4,10 @@
   export let clazz = "";
 </script>
 
-<a class={`flex flex-col space-y-4 hover:border-none font-normal ${clazz}`} {href}>
+<a
+  class={`home-glossary-box flex flex-col space-y-4 hover:border-none font-normal ${clazz}`}
+  {href}
+>
   <slot name="image" />
   <h4 class="font-bold leading-8 text-2xl">{title}</h4>
   <slot name="description" />
