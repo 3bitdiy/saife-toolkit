@@ -165,7 +165,7 @@
       power of surveillance capitalism and how much private companies know – and can predict – about
       who we are.
     </p>
-    <a href="https://www.madetomeasure.online/en/" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.madetomeasure.online/en/" rel="noopener noreferrer">
       <img
         class="mb-4 w-full object-cover rounded-lg transition-transform duration-200 hover:scale-105"
         src={madeToMeasure}
@@ -180,7 +180,6 @@
     <a
       class="group flex items-center space-x-2 hover:border-none ml-auto"
       href="https://madetomeasure.online/en"
-      target="_blank"
       rel="noopener noreferrer"
     >
       <span>Watch</span>

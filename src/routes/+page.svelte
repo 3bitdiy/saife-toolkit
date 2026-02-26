@@ -85,7 +85,15 @@
         <h3 class="font-bold leading-8 text-3xl">Content</h3>
 
         <h4 class="flex items-center leading-8 font-bold text-2xl space-x-2">
-          <GlossaryIcon class="h-12" /> <span>Glossary</span>
+          <h4 class="mt-4 py-4 leading-8 font-bold text-2xl ml-auto">
+            <a
+              href={`${base}/glossary`}
+              class="flex items-center space-x-2"
+              style="text-decoration: none;"
+            >
+              <GlossaryIcon class="h-12" /> <span>Glossary</span>
+            </a>
+          </h4>
         </h4>
       </div>
 
