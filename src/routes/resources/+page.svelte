@@ -21,23 +21,23 @@
 
   let filter: string | undefined;
 
-
   function parseYearMonth(item) {
     // Ensure year and month are numbers for sorting
     const year = Number(item.year) || 0;
     const month = Number(item.month) || 0;
-    return { year, month };
+    return {year, month};
   }
 
-  $: resourceData = (filter
-    ? data.resources.filter(({category}) => category === filter)
-    : data.resources
-  ).slice().sort((a, b) => {
-    const { year: ya, month: ma } = parseYearMonth(a);
-    const { year: yb, month: mb } = parseYearMonth(b);
-    if (ya !== yb) return yb - ya;
-    return mb - ma;
-  });
+  $: resourceData = (
+    filter ? data.resources.filter(({category}) => category === filter) : data.resources
+  )
+    .slice()
+    .sort((a, b) => {
+      const {year: ya, month: ma} = parseYearMonth(a);
+      const {year: yb, month: mb} = parseYearMonth(b);
+      if (ya !== yb) return yb - ya;
+      return mb - ma;
+    });
 
   const filterCategory = (category: string) => {
     filter = filter === category ? undefined : category;
