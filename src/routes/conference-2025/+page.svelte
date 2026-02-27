@@ -7,14 +7,9 @@
 
 <CommonHeader title="Healthy Online Information Spaces: From Policy Guidance to Pathways Forward">
   <HomeHeroIcon slot="icon" />
-  <p class="font-medium leading-5">
-    Conference held on 22 October 2025, Hofburg (Vienna), as part of the RFoM project “Towards
-    Healthy Online Information Spaces”.
-  </p>
 </CommonHeader>
 
 <main class="container mx-auto py-12 px-4">
-  <h2 class="font-extrabold text-2xl leading-9 my-8">Conference Overview</h2>
   <p class="mb-4 leading-6">
     The “Healthy Online Information Spaces: From Policy Guidance to Pathways Forward” conference
     took place on Wednesday, 22 October 2025, at Hofburg (Vienna) in the framework of the RFoM
