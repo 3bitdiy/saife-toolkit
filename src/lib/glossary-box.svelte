@@ -6,7 +6,7 @@
   import Plus from "$lib/plus.svelte";
   import ShadowBox from "$lib/shadow-box.svelte";
 
-  let clazz = "";
+  let clazz = "bg-white p-8 rounded-[1.25rem] shadow-box shadow-blue-osce";
   export {clazz as class};
   export let title: string;
   export let description: string;
