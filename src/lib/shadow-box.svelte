@@ -7,7 +7,7 @@
 </script>
 
 <div
-  class={c("bg-white p-8 rounded-[1.25rem] shadow-box mb-8 shadow-blue-osce", clazz, {
+  class={c("bg-white p-8 rounded-[1.25rem] shadow-box shadow-blue-osce", clazz, {
     "shadow-blue-osce": theme === "regular",
     "shadow-green": theme === "do",
     "shadow-rose": theme === "dont",

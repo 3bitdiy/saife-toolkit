@@ -32,6 +32,7 @@
   </p>
 
   <Box
+    class="mb-8"
     title="Launch of the Policy Manual on Safeguarding Media Freedom in the Age of Big Tech Platforms and AI"
   >
     <div class="mb-4">
@@ -49,7 +50,7 @@
     </div>
   </Box>
 
-  <Box title="Outcome of the Interactive Sessions and Closing">
+  <Box class="mb-8" title="Outcome of the Interactive Sessions and Closing">
     <div class="mb-4">
       <div class="aspect-w-16 aspect-h-9 my-2">
         <iframe
