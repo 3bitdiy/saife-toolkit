@@ -20,11 +20,11 @@
       Key principles to consider when developing strategies and policies on (generative) AI and
       digital technologies. Click <a
         href="https://rfom.osce.org/representative-on-freedom-of-media/510332"
-        target="_blank">here</a
+        class="underline">here</a
       >
       for more recommendations on safeguarding freedom of expression in the use of AI for content governance,
       and
-      <a href="https://rfom.osce.org/representative-on-freedom-of-media/598525" target="_blank"
+      <a href="https://rfom.osce.org/representative-on-freedom-of-media/598525" class="underline"
         >here</a
       >
       for recommendations on promoting media freedom and public interest journalism in the age of Big

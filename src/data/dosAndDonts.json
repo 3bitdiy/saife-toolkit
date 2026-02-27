@@ -1,1 +1,58 @@
-[{"kind":"Do","text":"Put the protection and promotion of freedom of expression and other human rights at the center of AI strategies and policies"},{"kind":"Do","text":"Recognize that solutions to policy challenges like hate speech, violent extremism, propaganda, and disinformation are complex and cannot be solved by the use of automated technologies alone"},{"kind":"Do","text":"Conduct thorough human rights due diligence on the potential human rights impacts of AI policies or regulations throughout the entire lifecycle of an AI system and before enacting any such policies into law"},{"kind":"Do","text":"Encourage and fund research toward AI systems fostering freedom of expression and media pluralism"},{"kind":"Do","text":"Create a transparent, whole-of-society approach for developing evidence-based policies that includes experts from academia, civil society, and the public"},{"kind":"Do","text":"Engage internationally, to ensure that freedom of expression and media freedom considerations are incorporated into national, regional and global AI strategies"},{"kind":"Do","text":"Implement information and digital literacy initiatives, to empower individuals and strengthen democratic resilience"},{"kind":"Don't","text":"Don’t use “ethical” or “responsible” AI frameworks as a substitute for human rights based AI-governance frameworks. Ethics are neither legally binding nor enforceable"},{"kind":"Don't","text":"Don’t expect AI technologies to solve deeply entrenched societal problems manifesting online"},{"kind":"Don't","text":"Don’t disregard human rights commitments and obligations when developing laws, policies, and regulations that are applicable to the AI sector"},{"kind":"Don't","text":"Don’t treat digital literacy as an afterthought, or exclude educating on the impact of AI on freedom of expression and other human rights"},{"kind":"Don't","text":"Don’t assume that more technology is always better, and prioritize efficiency over accuracy and fairness. Also, don’t  ignore bias and error rates, neglecting responsibility mechanisms"},{"kind":"Don't","text":"Don’t enact laws or regulations based on an overly optimistic view of AI's future capabilities, and avoid compromising the necessity of human review and judgement"},{"kind":"Don't","text":"Don’t adopt laws or policies from other jurisdictions without assessing their potential impacts on human rights in your own country"}]
+[
+    {
+        "kind": "Do",
+        "text": "Put the protection and promotion of freedom of expression and other human rights at the center of strategies and policies on (generative) AI and digital technologies"
+    },
+    {
+        "kind": "Do",
+        "text": "Recognize that solutions to policy challenges like hate speech, violent extremism, propaganda, and disinformation are complex and cannot be solved by the use of automated technologies alone"
+    },
+    {
+        "kind": "Do",
+        "text": "Conduct thorough human rights due diligence on the potential human rights impacts of policies or regulations throughout the entire lifecycle of AI systems and digital technologies, and before enacting any such policies into law"
+    },
+    {
+        "kind": "Do",
+        "text": "Encourage and fund research toward AI systems fostering freedom of expression, media freedom and a diverse, healthy and resilient online information ecosystem"
+    },
+    {
+        "kind": "Do",
+        "text": "Create a transparent, whole-of-society approach for developing evidence-based policies that includes experts from academia, civil society, and the public"
+    },
+    {
+        "kind": "Do",
+        "text": "Engage internationally to ensure that freedom of expression and media freedom considerations are incorporated into national, regional and global AI strategies"
+    },
+    {
+        "kind": "Do",
+        "text": "Implement information and digital literacy initiatives, to inform individuals and strengthen democratic resilience"
+    },
+    {
+        "kind": "Don't",
+        "text": "Don’t use “ethical” or “responsible” AI frameworks as a substitute for human rights-based AI governance frameworks, as ethics are neither legally binding nor enforceable"
+    },
+    {
+        "kind": "Don't",
+        "text": "Don’t expect (generative) AI technologies to solve deeply entrenched societal problems manifesting online"
+    },
+    {
+        "kind": "Don't",
+        "text": "Don’t disregard human rights commitments and obligations when developing laws, policies, and regulations that are applicable to the AI and tech sector"
+    },
+    {
+        "kind": "Don't",
+        "text": "Don’t treat digital literacy as an afterthought, or exclude educating on the impact of AI and Big Tech on freedom of expression and other human rights"
+    },
+    {
+        "kind": "Don't",
+        "text": "Don’t assume that more technology is always better, and don’t prioritize efficiency or profit over accuracy, fairness, or responsibility"
+    },
+    {
+        "kind": "Don't",
+        "text": "Don’t enact laws or regulations based on an overly optimistic view of AI’s future capabilities, and avoid compromising the necessity of human review and judgement"
+    },
+    {
+        "kind": "Don't",
+        "text": "Don’t adopt laws or policies from other jurisdictions without assessing their potential impact on human rights in your own country or context"
+    }
+]
