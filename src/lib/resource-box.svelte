@@ -7,7 +7,7 @@
   let clazz = "";
   export {clazz as class};
   export let title: string;
-  export let subtitle: string | null;
+  export let subtitle: string;
   export let href: string;
   export let description: string;
   export let category: string;
