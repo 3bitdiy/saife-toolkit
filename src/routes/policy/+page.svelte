@@ -9,21 +9,16 @@
   <HomeHeroIcon slot="icon" />
   <p class="text-blue-osce font-medium leading-5">
     This publication is part of the project “Spotlight on Artificial Intelligence and Freedom of
-    Expression” (#SAIFE) and was presented in 2022.
+    Expression” (#SAIFE) and was presented in 2022. The Policy Manual can be downloaded
+    <a
+      href="https://rfom.osce.org/representative-on-freedom-of-media/510332"
+      rel="noopener noreferrer"
+      class="underline text-blue-osce">here</a
+    >.
   </p>
 </CommonHeader>
 
 <main class="container mx-auto py-12 px-4">
-  <!-- <p class="mb-8 font-bold"> -->
-  <h2 class="font-extrabold text-3xl leading-9 my-12">
-    The Policy Manual can be downloaded <a
-      href="https://rfom.osce.org/representative-on-freedom-of-media/510332"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="underline text-blue-osce">here</a
-    >.
-  </h2>
-
   <h2 class="font-extrabold text-3xl leading-9 my-12">
     Key Recommendations for OSCE Participating States
   </h2>
