@@ -382,10 +382,10 @@ export const resources = async (): Promise<SheetRecord[]> => {
   const auth = getAuth();
   const googleDocs = await listFiles(auth, rootFolder);
 
-  const sheet = googleDocs.find(({name}) => name === "Resources Image URL Fixed");
+  const sheet = googleDocs.find(({name}) => name === "Resources");
 
   if (!sheet) {
-    throw new Error("'Resources Image URL Fixed' spreadsheet not found.");
+    throw new Error("'Resources' spreadsheet not found.");
   }
 
   const csv = await fetchSpreadsheetCsv(auth, sheet);
