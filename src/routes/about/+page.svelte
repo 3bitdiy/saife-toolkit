@@ -59,14 +59,13 @@
       <li id="fn1" class="mb-2">
         For the project’s evaluation, see <a
           href="https://rfom.osce.org/representative-on-freedom-of-media/572632"
-          target="_blank">https://rfom.osce.org/representative-on-freedom-of-media/572632</a
+          >https://rfom.osce.org/representative-on-freedom-of-media/572632</a
         >.
       </li>
       <li id="fn2">
         See, in particular, Article 19 of the International Covenant on Civil and Political Rights
         (ICCPR), <a
           href="https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights"
-          target="_blank"
           >https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights</a
         >, and the OSCE commitments on freedom of expression and media freedom,
         <a href="https://rfom.osce.org/representative-on-freedom-of-media/354081" target="_blank"
