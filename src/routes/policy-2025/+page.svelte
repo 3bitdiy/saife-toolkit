@@ -22,13 +22,13 @@
 <main class="container mx-auto py-12 px-4">
   <p class="mb-6">
     The Policy Manual aims to protect <b>media freedom</b> and promote <b>information integrity</b>
-    in the age of Big Tech and AI. The Manual is the culmination of a two-year Media & Big Tech
-    initiative that included a comprehensive analysis of existing policy approaches to media
-    visibility, viability and vigilance. Developed through in-depth research and several expert
-    roundtables, interviews, and broad consultations, it consolidates the expertise of more than 150
-    leading scholars and practitioners in media freedom, technology, and human rights from across
-    the OSCE region and beyond. It is both a <b>practical tool and a call to action</b>, providing
-    analysis, concrete recommendations, and principled guidance.
+    in the age of Big Tech and AI. The Manual is the culmination of a two-year Media & Big Tech initiative
+    that included a comprehensive analysis of existing policy approaches to media visibility, viability
+    and vigilance. Developed through in-depth research and several expert roundtables, interviews, and
+    broad consultations, it consolidates the expertise of more than 150 leading scholars and practitioners
+    in media freedom, technology, and human rights from across the OSCE region and beyond. It is both
+    a <b>practical tool and a call to action</b>, providing analysis, concrete recommendations, and
+    principled guidance.
   </p>
   <h2 class="font-extrabold text-2xl leading-9 my-8">Main Findings and Recommendations</h2>
   <ol role="list" class="policy list-inside mb-4">

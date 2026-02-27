@@ -64,13 +64,12 @@
     </div>
   </Box>
 
-  <section class="my-8">
-    <h3 class="font-bold text-xl mb-2">Resources</h3>
-    <ul class="list-disc pl-6">
+  <Box title="Resources">
+    <ul class="font-medium leading-6 space-y-2 list-disc list-inside">
       <li>Conference final report</li>
       <li>Annotated agenda</li>
       <li>List of biographies</li>
       <li>Information package</li>
     </ul>
-  </section>
+  </Box>
 </main>

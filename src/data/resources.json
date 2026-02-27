@@ -1217,6 +1217,7 @@
         ]
     },
     {
+        "image": "data/resources/82 - Podcast The World as you will know it.png",
         "": "82",
         "title": "How Business Models Have Shaped Big Tech",
         "category": "Listen",
@@ -2082,7 +2083,7 @@
         ]
     },
     {
-        "image": "data/resources/140 - Joint Declaration on AI, FoE and Media Freedom.png",
+        "image": "data/resources/140.png",
         "": "140",
         "title": "Joint Declaration on AI, Freedom of Expression and Media Freedom",
         "category": "Read",
@@ -2096,7 +2097,7 @@
         ]
     },
     {
-        "image": "data/resources/141 - Illustration Policy Manual.png",
+        "image": "data/resources/141.png",
         "": "141",
         "title": "Policy Manual on Safeguarding Media Freedom in the Age of Big Tech Platforms and AI",
         "category": "Read",
@@ -2111,7 +2112,7 @@
         ]
     },
     {
-        "image": "data/resources/142 - Illustration report on journalists in exile.png",
+        "image": "data/resources/142.png",
         "": "142",
         "title": "Enhancing Protection of Journalists under Severe Political Pressure",
         "category": "Read",
@@ -2123,7 +2124,7 @@
         "tags": []
     },
     {
-        "image": "data/resources/143 - Joint statement on AI and FoE.png",
+        "image": "data/resources/143.png",
         "": "143",
         "title": "Joint Statement on Artificial Intelligence and Freedom of Expression",
         "category": "Read",
@@ -2138,7 +2139,7 @@
         ]
     },
     {
-        "image": "data/resources/144 - ORF publication.png",
+        "image": "data/resources/144.png",
         "": "144",
         "title": "Public Value International #7 - \"Defending Media Freedom Amid Evolving Threats\", Interview of Jan Braathu, OSCE Representative on Freedom of the Media",
         "category": "Read",
@@ -2150,7 +2151,7 @@
         "tags": []
     },
     {
-        "image": "data/resources/145 - ODIHR Think for yourself.png",
+        "image": "data/resources/145.png",
         "": "145",
         "title": "Think Again: Freedom of Thought in the Age of Artificial Intelligence - Policy Brief",
         "category": "Read",
@@ -2164,7 +2165,7 @@
         ]
     },
     {
-        "image": "data/resources/146 - CoE guidance note.png",
+        "image": "data/resources/146.png",
         "": "146",
         "title": "Guidance Note on the Implications of Generative AI for Freedom of Expression",
         "category": "Read",
@@ -2178,7 +2179,7 @@
         ]
     },
     {
-        "image": "data/resources/147 - Ethical use of GenAI.png",
+        "image": "data/resources/147.png",
         "": "147",
         "title": "Ethical Use of Generative Artificial Intelligence in the Context of Preventing and Countering Violent Extremism and Radicalization that Lead to Terrorism - OSCE Policy Brief",
         "category": "Read",
@@ -2192,7 +2193,7 @@
         ]
     },
     {
-        "image": "data/resources/148 - Winter School.png",
+        "image": "data/resources/148.png",
         "": "148",
         "title": "OSCE Winter School on Youth perspectives on AI use and human rights - Workshop on AI and Freedom of Expression: Risks, Rights and Regulations, Outcome Report",
         "category": "Read",
@@ -2206,7 +2207,7 @@
         ]
     },
     {
-        "image": "data/resources/149 - Conference report.png",
+        "image": "data/resources/149.png",
         "": "149",
         "title": "OSCE RFoM Conference on Healthy Online Information Spaces: From Policy Guidance to Pathways Forward, Final Report",
         "category": "Read",
@@ -2220,7 +2221,7 @@
         ]
     },
     {
-        "image": "data/resources/150 - 2025 IGF session.png",
+        "image": "data/resources/150.png",
         "": "150",
         "title": "Internet Governance Forum 2025, Session on Information Integrity Through Journalism and Alternative Platforms - Outcome Report",
         "category": "Read",
@@ -2232,7 +2233,7 @@
         "tags": []
     },
     {
-        "image": "data/resources/151 - SHDM session.png",
+        "image": "data/resources/151.png",
         "": "151",
         "title": "OSCE Supplementary Human Dimension Meeting - Side Event on \"Support of Suppression: The Complex Role of Big Tech in Conflict Reporting\" - Outcome Report",
         "category": "Read",
@@ -2244,7 +2245,7 @@
         "tags": []
     },
     {
-        "image": "data/resources/152 - SEEMC plenary session.png",
+        "image": "data/resources/152.png",
         "": "152",
         "title": "10th RFoM Regional South East Europe Media Conference, Plenary session on \"Rethinking the Economics of Public Interest Journalism in the Era of Big Tech and AI\" - Outcome Report",
         "category": "Read",
@@ -2256,7 +2257,7 @@
         "tags": []
     },
     {
-        "image": "data/resources/153 - RightsCon session.png",
+        "image": "data/resources/153.png",
         "": "153",
         "title": "RightsCon 2025 - Workshop on \"Information Integrity and Integrity of Information Spaces: States' Role in Ensuring a Healthy Information Ecosystem\" ",
         "category": "Read",
@@ -2268,7 +2269,7 @@
         "tags": []
     },
     {
-        "image": "data/resources/154 - Media Actually podcast.png",
+        "image": "data/resources/154.png",
         "": "154",
         "title": "Who Sets the Rules? Big Tech, AI and the Future of Media Freedom",
         "category": "Listen",
@@ -2277,6 +2278,24 @@
         "year": "2025",
         "description": "In this podcast episod of Media Actually powered by RNW Media on Big Tech, AI and the future of me dia freedom, Julia Haas, Advisor of the OSCE Representative on Freedom of the Media and manager of the project on Healthy Online Information Spaces, presents the Policy Manual on Safeguarding Media Freedom in the Age of Big Tech Platforms and AI, and explores the challenges and opportunities of protecting independent media in a rapidly evolving digital world.",
         "href": "Who Sets the Rules? Big Tech, AI and the Future of Media Freedom - Media Actually | Podcast on Spotify",
+        "tags": []
+    },
+    {
+        "": "155",
+        "title": "Students' research papers developed in the framework of the RAUN program 2025",
+        "category": "Read",
+        "tags": []
+    },
+    {
+        "image": "data/resources/156.png",
+        "": "156",
+        "title": "Exploring Must-Carry for News in the Platform Economy",
+        "category": "Read",
+        "subtitle": "Office of the OSCE Representative on Freedom of the Media, September 2025",
+        "month": "9",
+        "year": "2025",
+        "description": "This paper is a background research contributing to the OSCE Media & Big Tech initiative. It aims to provide a better understanding, through comparative analysis, of the \"must-carry\" policy approach for the broadcasting sector to draw lessons for inspiration and whether/how equivalent provisions could be operationalized in other sectors, in particular digital platform regulation.",
+        "href": "Exploring Must-Carry for News in the Platform Economy | OSCE Representative on Freedom of the Media",
         "tags": []
     }
 ]
