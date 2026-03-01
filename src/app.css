@@ -1,3 +1,10 @@
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .object-contain-md {
     object-fit: contain !important;
@@ -46,7 +53,7 @@
   a:focus-visible {
     outline: none !important;
     box-shadow: none !important;
-    border: none !important;
+    border: none;
     text-decoration: none !important;
   }
 }
@@ -145,4 +152,16 @@ a.freturn {
   will-change: transform;
   transition: box-shadow 0.3s;
   z-index: 2;
+}
+
+.menu-link {
+  @apply block w-full box-border border-2 border-solid border-blue-osce rounded-lg font-bold py-2 px-4 text-left whitespace-nowrap transition-colors;
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active,
+.menu-link:focus-visible {
+  border: 2px solid !important;
+  border-color: rgb(51 82 144) !important;
 }
