@@ -25,6 +25,7 @@
   const toggleTag = (tag?: string) => {
     if (!tag) return;
     activeTag = activeTag === tag ? undefined : tag;
+    window.scrollTo({top: 0, behavior: "smooth"});
   };
 
   $: activeTagCount = activeTag
