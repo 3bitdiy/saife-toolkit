@@ -1,18 +1,29 @@
 <script lang="ts">
   import c from "clsx";
+  import {createEventDispatcher} from "svelte";
 
   import CategoryTag from "$lib/category-tag.svelte";
   import ShadowBox from "$lib/shadow-box.svelte";
 
+  const dispatch = createEventDispatcher<{tagSelect: string}>();
+
   let clazz = "";
   export {clazz as class};
+
   export let title: string;
-  export let subtitle: string;
+  export let subtitle: string | null;
   export let href: string;
   export let description: string;
   export let category: string;
   export let tags: string[];
   export let Image;
+
+  // NEW: currently active tag from page
+  export let activeTag: string | undefined;
+
+  const onTagClick = (tag: string) => {
+    dispatch("tagSelect", tag);
+  };
 </script>
 
 <ShadowBox class={c(clazz)}>
@@ -21,6 +32,7 @@
       {#if Image}
         <enhanced:img class="md:max-w-xs" src={Image} alt="Resource image" />
       {/if}
+
       <div class="flex flex-col">
         <CategoryTag {category} />
         <h2 class="text-2xl leading-9 font-extrabold mt-6">{title}</h2>
@@ -38,7 +50,18 @@
       <span class="font-bold">Tags</span>
 
       {#each tags as tag}
-        <span class="font-bold p-2 border border-blue-osce rounded-md">{tag}</span>
+        <button type="button" class="max-w-full" on:click={() => onTagClick(tag)}>
+          <span
+            class={c(
+              "font-bold p-2 border border-blue-osce rounded-md inline-block max-w-full whitespace-normal break-words",
+              {
+                "bg-blue-saife": activeTag === tag,
+              },
+            )}
+          >
+            {tag}
+          </span>
+        </button>
       {/each}
     </div>
   </svelte:fragment>

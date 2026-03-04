@@ -2,18 +2,13 @@
   import c from "clsx";
 
   import CategoryTag from "$lib/category-tag.svelte";
-  import HomeHeroIcon from "$lib/home-hero-icon.svelte";
   import CommonHeader from "$lib/common-header.svelte";
   import ResourceBox from "$lib/resource-box.svelte";
 
   import type {PageData} from "./$types";
 
-  //const images = import.meta.glob("../../data/resources/*.jpg", {
-  //const images = import.meta.glob("../../data/resources/*.{jpg,jpeg,png}", {
-  const images = import.meta.glob("../../data/resources/*.*", {
-    query: {
-      enhanced: true,
-    },
+  const images = import.meta.glob("../../data/resources/*.jpg", {
+    query: {enhanced: true},
     eager: true,
   });
 
@@ -21,32 +16,30 @@
 
   let filter: string | undefined;
 
-  function parseYearMonth(item) {
-    // Ensure year and month are numbers for sorting
-    const year = Number(item.year) || 0;
-    const month = Number(item.month) || 0;
-    return {year, month};
-  }
-
-  $: resourceData = (
-    filter ? data.resources.filter(({category}) => category === filter) : data.resources
-  )
-    .slice()
-    .sort((a, b) => {
-      const {year: ya, month: ma} = parseYearMonth(a);
-      const {year: yb, month: mb} = parseYearMonth(b);
-      if (ya !== yb) return yb - ya;
-      return mb - ma;
-    });
+  let activeTag: string | undefined;
 
   const filterCategory = (category: string) => {
     filter = filter === category ? undefined : category;
   };
+
+  const toggleTag = (tag?: string) => {
+    if (!tag) return;
+    activeTag = activeTag === tag ? undefined : tag;
+  };
+
+  $: activeTagCount = activeTag
+    ? data.resources.filter((r) => (r.tags ?? []).includes(activeTag)).length
+    : 0;
+
+  $: resourceData = data.resources.filter(({category, tags}) => {
+    const categoryOk = filter ? category === filter : true;
+    const tagOk = activeTag ? (tags ?? []).includes(activeTag) : true;
+    return categoryOk && tagOk;
+  });
 </script>
 
 <CommonHeader title="Key resources: AI and freedom of expression">
-  <HomeHeroIcon slot="icon" />
-  <p class="text-blue-osce font-medium leading-5">
+  <p class="font-medium leading-5">
     The use of AI systems by digital platforms is radically reshaping our information ecosystems and
     playing a critical role in determining what we read, see, and share online. The following is a
     repository of essential resources, research, podcasts, videos, and other materials from experts
@@ -57,7 +50,7 @@
 </CommonHeader>
 
 <main class="container mx-auto py-12 px-4 flex flex-col space-y-16">
-  <div class="flex flex-row space-x-4">
+  <div class="flex flex-row flex-wrap gap-4 items-center">
     <button on:click={() => filterCategory("Read")}>
       <CategoryTag
         class={c({
@@ -67,6 +60,7 @@
         category="Read"
       />
     </button>
+
     <button on:click={() => filterCategory("Listen")}>
       <CategoryTag
         class={c({
@@ -76,6 +70,7 @@
         category="Listen"
       />
     </button>
+
     <button on:click={() => filterCategory("Watch")}>
       <CategoryTag
         class={c({
@@ -85,6 +80,18 @@
         category="Watch"
       />
     </button>
+
+    {#if activeTag}
+      {#if activeTag}
+        <button type="button" class="max-w-full" on:click={() => toggleTag(activeTag)}>
+          <span
+            class="bg-blue-saife font-bold p-2 border border-blue-osce rounded-md inline-block max-w-full whitespace-normal break-words"
+          >
+            {activeTag} ({activeTagCount})
+          </span>
+        </button>
+      {/if}
+    {/if}
   </div>
 
   {#each resourceData as { title, subtitle, description, href, category, tags, image }}
@@ -95,6 +102,8 @@
       {href}
       {category}
       {tags}
+      {activeTag}
+      on:tagSelect={(e) => toggleTag(e.detail)}
       Image={images[`../../${image}`]?.default}
     />
   {/each}

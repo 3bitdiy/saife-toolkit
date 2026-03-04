@@ -23,17 +23,17 @@
   };
 
   const menuItems = [
-    {description: "About the OSCE #SAIFE project", href: `${base}/about`, type: "item"},
+    // {type: "divider"},
     {description: "Learn More About This Resource Hub", href: `${base}/essay`, type: "item"},
-    // {type: "divider"},
-    {description: "Policy manual", href: `${base}/policy`, type: "item"},
-    {description: "Dos and dont's", href: `${base}/dos-and-donts`, type: "item"},
     {description: "Resources", href: `${base}/resources`, type: "item"},
-    {description: "Masterclass", href: `${base}/masterclass`, type: "item"},
+    {description: "Dos and dont's", href: `${base}/dos-and-donts`, type: "item"},
+    {description: "Policy manual (2025)", href: `${base}/policy-2025`, type: "item"},
+    {description: "Conference (2025)", href: `${base}/conference-2025`, type: "item"},
+    {description: "Policy manual (2022)", href: `${base}/policy`, type: "item"},
+    {description: "Conference (2022)", href: `${base}/expedition`, type: "item"},
     {description: "Made to Measure", href: "https://www.madetomeasure.online/en/", type: "item"},
-    {description: "SAIFE Expedition", href: `${base}/expedition`, type: "item"},
-    // {type: "divider"},
     {description: "Glossary", href: `${base}/glossary`, type: "item"},
+    {description: "About the OSCE #SAIFE project", href: `${base}/about`, type: "item"},
   ];
 
   beforeNavigate(closeDropdown);
