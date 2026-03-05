@@ -6,11 +6,10 @@
 
 <svg
   class={c("block w-full h-full", clazz)}
-  width="33"
-  height="30"
   viewBox="0 0 33 30"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="xMidYMid meet"
   aria-hidden="true"
 >
   <path

@@ -24,11 +24,11 @@
   )}
 >
   {#if category === "Read"}
-    <Read class="w-[32px] h-[28px] shrink-0" />
+    <Read class="block !w-[32px] !h-[28px] shrink-0" />
   {:else if category === "Listen"}
-    <Listen class="w-[34px] h-[30px] shrink-0" />
+    <Listen class="block !w-[34px] !h-[30px] shrink-0" />
   {:else if category === "Watch"}
-    <Watch class="w-[35px] h-[35px] shrink-0" />
+    <Watch class="block !w-[35px] !h-[35px] shrink-0" />
   {/if}
 
   <span class="uppercase font-semibold leading-6 tracking-[0.05em]">
