@@ -50,62 +50,56 @@
   </p>
 </CommonHeader>
 
-<main class="container mx-auto py-12 px-4 flex flex-col space-y-16">
-  <div class="flex flex-row flex-wrap gap-4 items-center">
-    <button on:click={() => filterCategory("Read")}>
-      <CategoryTag
-        class={c({
-          "bg-white": filter !== "Read",
-          "bg-blue-saife": filter === "Read",
-        })}
-        category="Read"
-      />
-    </button>
+<main class="container mx-auto py-12 px-4 flex flex-col">
+  <div class="flex flex-col items-center min-h-[120px] justtify-center">
+    <!-- Tag Filter -->
+    <div class="flex flex-wrap gap-10 justify-center items-center pt-4 pb-4">
+      <button class="self-stretch flex items-center" on:click={() => filterCategory("Read")}>
+        <CategoryTag category="Read" isActive={filter === "Read"} />
+      </button>
 
-    <button on:click={() => filterCategory("Listen")}>
-      <CategoryTag
-        class={c({
-          "bg-white": filter !== "Listen",
-          "bg-blue-saife": filter === "Listen",
-        })}
-        category="Listen"
-      />
-    </button>
+      <button class="self-stretch flex items-center" on:click={() => filterCategory("Listen")}>
+        <CategoryTag category="Listen" isActive={filter === "Listen"} />
+      </button>
 
-    <button on:click={() => filterCategory("Watch")}>
-      <CategoryTag
-        class={c({
-          "bg-white": filter !== "Watch",
-          "bg-blue-saife": filter === "Watch",
-        })}
-        category="Watch"
-      />
-    </button>
+      <button class="self-stretch flex items-center" on:click={() => filterCategory("Watch")}>
+        <CategoryTag category="Watch" isActive={filter === "Watch"} />
+      </button>
+    </div>
 
-    {#if activeTag}
+    <!-- Tag filter -->
+    <div class="flex justify-center mb-12">
       {#if activeTag}
-        <button type="button" class="max-w-full" on:click={() => toggleTag(activeTag)}>
-          <span
-            class="bg-blue-saife font-bold p-2 border border-blue-osce rounded-md inline-block max-w-full whitespace-normal break-words"
-          >
-            {activeTag} ({activeTagCount})
-          </span>
+        <button
+          type="button"
+          class="
+            inline-flex items-center max-w-full whitespace-normal break-words
+            px-[15px] py-[8px] mt-8 mb-4 rounded-[28px] border
+            text-sm font-semibold leading-5
+            !bg-blue-osce !text-white !border-blue-osce
+            active:bg-blue-osce active:text-white active:border-blue-osce
+            focus-visible:bg-blue-osce focus-visible:text-white focus-visible:border-blue-osce
+          "
+          on:click={() => toggleTag(activeTag)}
+        >
+          {activeTag} ({activeTagCount})
         </button>
       {/if}
-    {/if}
+    </div>
   </div>
-
-  {#each resourceData as { title, subtitle, description, href, category, tags, image }}
-    <ResourceBox
-      {title}
-      {subtitle}
-      {description}
-      {href}
-      {category}
-      {tags}
-      {activeTag}
-      on:tagSelect={(e) => toggleTag(e.detail)}
-      Image={images[`../../${image}`]?.default}
-    />
-  {/each}
+  <div class="flex flex-col space-y-16">
+    {#each resourceData as { title, subtitle, description, href, category, tags, image }}
+      <ResourceBox
+        {title}
+        {subtitle}
+        {description}
+        {href}
+        {category}
+        {tags}
+        {activeTag}
+        on:tagSelect={(e) => toggleTag(e.detail)}
+        Image={images[`../../${image}`]?.default}
+      />
+    {/each}
+  </div>
 </main>

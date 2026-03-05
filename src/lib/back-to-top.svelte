@@ -30,7 +30,6 @@
     };
   });
 
-  // optional: extra safety
   onDestroy(() => {
     if (!browser) return;
     window.removeEventListener("scroll", update);
@@ -48,7 +47,6 @@
     clazz,
   )}
 >
-  <!-- SVG (tvoj) -->
   <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#filter0_d_4947_105438)">
       <rect x="3" width="50" height="50" rx="25" fill="white" shape-rendering="crispEdges" />

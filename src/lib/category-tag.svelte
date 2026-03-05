@@ -8,17 +8,30 @@
   let clazz = "";
   export {clazz as class};
   export let category: string;
+  export let isActive = false;
 </script>
 
 <div
-  class={c("rounded-md border border-blue max-w-fit px-2 py-1 flex items-center space-x-2", clazz)}
+  class={c(
+    "h-[52px] w-[152px] inline-flex items-center justify-center",
+    "px-[20px] gap-[18px]",
+    "rounded-[28px] border border-blue-osce",
+
+    isActive
+      ? "bg-blue-osce text-white border-blue-osce"
+      : "bg-white text-blue-osce border-blue-osce",
+    clazz,
+  )}
 >
   {#if category === "Read"}
-    <Read class="text-blue w-10 h-10" />
+    <Read class="w-[32px] h-[28px] shrink-0" />
   {:else if category === "Listen"}
-    <Listen class="text-blue w-10 h-10" />
+    <Listen class="w-[34px] h-[30px] shrink-0" />
   {:else if category === "Watch"}
-    <Watch class="text-blue w-10 h-10" />
+    <Watch class="w-[35px] h-[35px] shrink-0" />
   {/if}
-  <span class="uppercase font-semibold leading-5">{category}</span>
+
+  <span class="uppercase font-semibold leading-6 tracking-[0.05em]">
+    {category}
+  </span>
 </div>
