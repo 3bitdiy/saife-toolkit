@@ -1,4 +1,4 @@
-import{s as S,a as b,f,c as w,g as p,r as u,j as d,i as c,d as l,v as h}from"../chunks/scheduler.3e08a718.js";import{S as M,i as y,b as g,d as $,m as _,a as x,t as v,e as C}from"../chunks/index.130874bb.js";import{C as E}from"../chunks/common-header.28bd5611.js";import{H as A}from"../chunks/home-hero-icon.b3b45a48.js";function F(r){let e,o=`Part of the OSCE RFoM efforts to raise awareness among the OSCE participating States and
+import{s as S,a as b,f,c as w,g as p,r as u,j as d,i as c,d as l,v as h}from"../chunks/scheduler.3e08a718.js";import{S as M,i as y,b as g,d as $,m as _,a as x,t as v,e as C}from"../chunks/index.130874bb.js";import{C as E}from"../chunks/common-header.28bd5611.js";import{H as A}from"../chunks/home-hero-icon.6e5e767b.js";function F(r){let e,o=`Part of the OSCE RFoM efforts to raise awareness among the OSCE participating States and
     non-state actors on the impact of AI-based content governance and surveillance-based business
     models of online platforms on the opinion-shaping process, freedom of expression, media
     pluralism, and democratic processes and to build capacity to address the challenges, in view of

@@ -18,9 +18,9 @@
   };
 </script>
 
-<ShadowBox class={c(clazz, "cursor-pointer")} on:click={toggleCollapse}>
+<ShadowBox class={c(clazz)} on:click={toggleCollapse}>
   <svelte:fragment>
-    <div class={c("flex justify-between items-center", {"mb-10": !isCollapsed})}>
+    <div class={c("flex justify-between items-center cursor-pointer", {"mb-10": !isCollapsed})}>
       <h2 class="text-lg uppercase font-extrabold">{title}</h2>
 
       <button type="button" on:click|stopPropagation={toggleCollapse}>

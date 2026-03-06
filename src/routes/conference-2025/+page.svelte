@@ -2,7 +2,7 @@
   import {base} from "$app/paths";
   import CommonHeader from "$lib/common-header.svelte";
   import HomeHeroIcon from "$lib/home-hero-icon.svelte";
-  import Box from "$lib/expedition-box.svelte";
+  import Box from "$lib/conference-box.svelte";
 </script>
 
 <CommonHeader title="Healthy Online Information Spaces: From Policy Guidance to Pathways Forward">
@@ -36,26 +36,24 @@
     title="Launch of the Policy Manual on Safeguarding Media Freedom in the Age of Big Tech Platforms and AI"
   >
     <div class="mb-4">
-      <div class="aspect-w-16 aspect-h-9 my-2">
+      <div class="my-2 aspect-video w-full">
         <iframe
-          width="560"
-          height="315"
+          class="w-full h-full"
           src="https://www.youtube.com/embed/OrZiPjVHSQo"
           title="Launch Video"
           frameborder="0"
           allowfullscreen
         />
       </div>
-      <p class="mt-4"><a href={`${base}/policy`} class="text-blue-osce">Policy Manual</a></p>
+      <p class="mt-4"><a href={`${base}/policy`} class="text-blue-osce">Policy Manual (2022)</a></p>
     </div>
   </Box>
 
   <Box class="mb-8" title="Outcome of the Interactive Sessions and Closing">
     <div class="mb-4">
-      <div class="aspect-w-16 aspect-h-9 my-2">
+      <div class="my-2 aspect-video w-full">
         <iframe
-          width="560"
-          height="315"
+          class="w-full h-full"
           src="https://www.youtube.com/embed/sb4YUVppOOE"
           title="Closing Session Video"
           frameborder="0"

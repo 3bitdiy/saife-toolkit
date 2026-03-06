@@ -1,7 +1,7 @@
 <script lang="ts">
   import CommonHeader from "$lib/common-header.svelte";
   import HomeHeroIcon from "$lib/home-hero-icon.svelte";
-  import Box from "$lib/expedition-box.svelte";
+  import Box from "$lib/conference-box.svelte";
 </script>
 
 <CommonHeader title="SAIFE Expedition">
@@ -54,10 +54,9 @@
   </Box>
 
   <Box class="mb-8" title="Panel: Content Governance in Times of Crises">
-    <div class="mb-4">
+    <div class="my-2 aspect-video w-full">
       <iframe
-        width="560"
-        height="315"
+        class="w-full h-full"
         src="https://www.youtube-nocookie.com/embed/TNKbvuPEIE4?si=HNqz4pjyte5SdUhF"
         title="YouTube video player"
         frameborder="0"
@@ -76,10 +75,9 @@
   </Box>
 
   <Box class="mb-8" title="Panel: Public Interest Framework in the Digital Realm">
-    <div class="mb-4">
+    <div class="my-2 aspect-video w-full">
       <iframe
-        width="560"
-        height="315"
+        class="w-full h-full"
         src="https://www.youtube-nocookie.com/embed/UnvlYXiVqe4?si=mBzkWs-1kVBjvVOZ"
         title="YouTube video player"
         frameborder="0"
