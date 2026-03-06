@@ -7,7 +7,7 @@
 
   import type {PageData} from "./$types";
 
-  const images = import.meta.glob("../../data/resources/*.jpg", {
+  const images = import.meta.glob("../../data/resources/*.{jpg,png,jpeg,webp}", {
     query: {enhanced: true},
     eager: true,
   });
@@ -32,11 +32,26 @@
     ? data.resources.filter((r) => (r.tags ?? []).includes(activeTag)).length
     : 0;
 
-  $: resourceData = data.resources.filter(({category, tags}) => {
-    const categoryOk = filter ? category === filter : true;
-    const tagOk = activeTag ? (tags ?? []).includes(activeTag) : true;
-    return categoryOk && tagOk;
-  });
+  // $: resourceData = data.resources.filter(({category, tags}) => {
+  //   const categoryOk = filter ? category === filter : true;
+  //   const tagOk = activeTag ? (tags ?? []).includes(activeTag) : true;
+  //   return categoryOk && tagOk;
+  // });
+  $: resourceData = data.resources
+    .filter(({category, tags}) => {
+      const categoryOk = filter ? category === filter : true;
+      const tagOk = activeTag ? (tags ?? []).includes(activeTag) : true;
+      return categoryOk && tagOk;
+    })
+    .sort((a, b) => {
+      const yearA = Number(a.year) || 0;
+      const yearB = Number(b.year) || 0;
+      const monthA = Number(a.month) || 0;
+      const monthB = Number(b.month) || 0;
+
+      if (yearA !== yearB) return yearB - yearA;
+      return monthB - monthA;
+    });
 </script>
 
 <CommonHeader title="Key resources: AI and freedom of expression">

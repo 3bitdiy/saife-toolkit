@@ -22,6 +22,13 @@
   const onTagClick = (tag: string) => {
     dispatch("tagSelect", tag);
   };
+
+  const resolvedHref =
+    href?.startsWith("http://") || href?.startsWith("https://")
+      ? href
+      : href
+      ? `https://www.osce.org/${href.replace(/^\/+/, "")}`
+      : "";
 </script>
 
 <ShadowBox class={c(clazz)}>
@@ -36,11 +43,30 @@
         <h2 class="text-2xl leading-9 font-extrabold mt-6">{title}</h2>
         {#if subtitle}<p class="text-black italic font-thin">{subtitle}</p>{/if}
         {#if description}<p class="mt-6">{description}</p>{/if}
-        {#if href}
+        <!-- {#if href}
           <div class="mt-4 flex items-center">
             <a {href} rel="external" class="font-semibold text-blue-osce"> Go to resource </a>
 
             <a {href} rel="external" class="ml-4 group flex items-center hover:border-none">
+              <span class="rounded-full border-2 border-blue-osce p-2 shrink-0">
+                <Chevron
+                  class="w-5 h-5 stroke-blue-osce transition-transform duration-300 group-hover:translate-x-1"
+                />
+              </span>
+            </a>
+          </div>
+        {/if} -->
+        {#if resolvedHref}
+          <div class="mt-4 flex items-center">
+            <a href={resolvedHref} rel="external" class="font-semibold text-blue-osce">
+              Go to resource
+            </a>
+
+            <a
+              href={resolvedHref}
+              rel="external"
+              class="ml-4 group flex items-center hover:border-none"
+            >
               <span class="rounded-full border-2 border-blue-osce p-2 shrink-0">
                 <Chevron
                   class="w-5 h-5 stroke-blue-osce transition-transform duration-300 group-hover:translate-x-1"
