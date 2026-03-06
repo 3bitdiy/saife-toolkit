@@ -4,6 +4,7 @@
   import CategoryTag from "$lib/category-tag.svelte";
   import CommonHeader from "$lib/common-header.svelte";
   import ResourceBox from "$lib/resource-box.svelte";
+  import HomeHeroIcon from "$lib/home-hero-icon.svelte";
 
   import type {PageData} from "./$types";
 
@@ -32,11 +33,6 @@
     ? data.resources.filter((r) => (r.tags ?? []).includes(activeTag)).length
     : 0;
 
-  // $: resourceData = data.resources.filter(({category, tags}) => {
-  //   const categoryOk = filter ? category === filter : true;
-  //   const tagOk = activeTag ? (tags ?? []).includes(activeTag) : true;
-  //   return categoryOk && tagOk;
-  // });
   $: resourceData = data.resources
     .filter(({category, tags}) => {
       const categoryOk = filter ? category === filter : true;
@@ -55,6 +51,7 @@
 </script>
 
 <CommonHeader title="Key resources: AI and freedom of expression">
+  <HomeHeroIcon slot="icon" />
   <p class="font-medium leading-5">
     The use of AI systems by digital platforms is radically reshaping our information ecosystems and
     playing a critical role in determining what we read, see, and share online. The following is a
