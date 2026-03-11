@@ -11,17 +11,17 @@ JSON files. The site deploys to GitHub Pages and a dedicated SSH server.
 
 ## Project Stack
 
-| Layer | Technology |
-| --- | --- |
-| Framework | SvelteKit 1.27 + Svelte 4.2 |
-| Language | TypeScript 5.4 (strict mode) |
-| Build tool | Vite 4.4 |
-| Adapter | `@sveltejs/adapter-static` — fully prerendered, no SSR |
-| Styling | Tailwind CSS 3.3 (JIT) + PostCSS |
-| HTML parsing | `cheerio` (data pipeline only) |
-| Google Drive | `googleapis` service account (data pipeline only) |
-| Package manager | npm (`package-lock.json` is committed) |
-| Runtime | Node.js 18 |
+| Layer           | Technology                                             |
+| --------------- | ------------------------------------------------------ |
+| Framework       | SvelteKit 1.27 + Svelte 4.2                            |
+| Language        | TypeScript 5.4 (strict mode)                           |
+| Build tool      | Vite 4.4                                               |
+| Adapter         | `@sveltejs/adapter-static` — fully prerendered, no SSR |
+| Styling         | Tailwind CSS 3.3 (JIT) + PostCSS                       |
+| HTML parsing    | `cheerio` (data pipeline only)                         |
+| Google Drive    | `googleapis` service account (data pipeline only)      |
+| Package manager | npm (`package-lock.json` is committed)                 |
+| Runtime         | Node.js 18                                             |
 
 No database, no backend API, no auth system, no test framework.
 

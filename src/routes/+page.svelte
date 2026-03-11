@@ -80,9 +80,11 @@
           freedom of expression, and provides resources and recommendations on enhancing the
           availability and accessibility of public interest information online as well as on
           platform, content and internet governance more broadly. Explore these topics, including
-          policy manuals (<span class="font-bold">2022</span> and
-          <span class="font-bold">2025</span>), <span class="font-bold">Do’s and Don’ts</span>, and
-          additional <span class="font-bold">resources</span>.
+          policy manuals (<a href={`${base}/policy`} class="font-bold hover:underline">2022</a> and
+          <a href={`${base}/policy-2025`} class="font-bold hover:underline">2025</a>),
+          <a href={`${base}/dos-and-donts`} class="font-bold hover:underline">Do’s and Don’ts</a>,
+          and additional
+          <a href={`${base}/resources`} class="font-bold hover:underline">resources</a>.
         </p>
 
         <div class="flex justify-end">
