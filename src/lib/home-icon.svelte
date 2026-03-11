@@ -1,4 +1,9 @@
-<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<script>
+  let clazz = '';
+  export { clazz as class };
+</script>
+
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class={clazz}>
   <rect width="60" height="60" class="home-icon-bg" />
   <g clip-path="url(#clip0_4964_117030)">
     <path
@@ -18,17 +23,17 @@
 
 <style>
   .home-icon-bg {
-    fill: white;
+    fill: var(--color-blue);
     transition: fill 0.2s;
   }
   .home-icon-path {
-    stroke: rgb(36, 57, 101);
+    stroke: #fff;
     transition: stroke 0.2s;
   }
   svg:hover .home-icon-bg {
-    fill: rgb(36, 57, 101);
+    fill: white;
   }
   svg:hover .home-icon-path {
-    stroke: #fff;
+    stroke: var(--color-blue);
   }
 </style>

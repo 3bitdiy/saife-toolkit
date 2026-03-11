@@ -8,7 +8,7 @@
 
 <CommonHeader title="Spotlight on Artificial Intelligence and Freedom of Expression (#SAIFE)">
   <HomeHeroIcon slot="icon" />
-  <p class="text-blue-osce font-medium leading-5">Towards Healthy Online Information Spaces</p>
+  <p class="text-white font-medium leading-5">Towards Healthy Online Information Spaces</p>
 </CommonHeader>
 
 <main class="container mx-auto py-12 px-4">

@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
       },
 
       fontSize: {
@@ -22,7 +22,7 @@ module.exports = {
       colors: {
         blue: {
           osce: "#243965",
-          DEFAULT: "#335290",
+          DEFAULT: "#154678",
           saife: "#34C5EB",
           light: "#A5E5F6",
         },

@@ -10,10 +10,10 @@
 </script>
 
 <div
-  class={c("bg-white p-8 rounded-[1.25rem] shadow-box shadow-blue-osce", clazz, {
-    "shadow-blue-osce": theme === "regular",
-    "shadow-green": theme === "do",
-    "shadow-rose": theme === "dont",
+  class={c("bg-white rounded-[1.25rem] border shadow-box", clazz, {
+    "p-[60px] border-blue shadow-blue-osce": theme === "regular",
+    "p-[20px] border-green shadow-green": theme === "do",
+    "p-[20px] border-rose shadow-rose": theme === "dont",
   })}
   on:click={(e) => dispatch("click", e)}
 >

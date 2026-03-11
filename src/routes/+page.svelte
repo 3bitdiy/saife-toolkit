@@ -6,56 +6,73 @@
   import dosAndDontsImage from "$lib/assets/dos-and-donts.png";
   import madeToMeasureImage from "$lib/assets/made-to-measure.png";
   import expeditionImage from "$lib/assets/saife-expedition.png";
-  import saifeLogo from "$lib/assets/saife-logo.png";
+  import saifeLogo from "$lib/assets/saife-logo.svg";
   import Chevron from "$lib/chevron.svelte";
   import GlossaryIcon from "$lib/glossary-icon.svelte";
   import Header from "$lib/header.svelte";
   import HomeGlossaryBox from "$lib/home-glossary-box.svelte";
   import ShadowBox from "$lib/shadow-box.svelte";
   import {base} from "$app/paths";
+  const conferenceTitle = `Conference on \u201cHealthy Online Information Spaces: From Policy Guidance to Pathways Forward\u201d`;
 </script>
 
 <Header theme="dark">
-  <div class="flex items-center justify-center space-x-4 h-full">
+  <div class="flex items-center justify-center gap-12 h-full">
     <img alt="SAIFE Toolkit Logo" src={saifeLogo} />
 
-    <div class="text-white flex flex-col space-y-3">
-      <h1 class="font-bold text-[4rem] leading-none">#SAIFE Resource Hub</h1>
-      <span class="text-lg font-semibold"
+    <div class="text-white flex flex-col items-start max-w-xl">
+      <h1 class="text-[2.8rem] leading-none">
+        TOWARDS <span class="font-bold">HEALTHY</span> ONLINE
+        <span class="font-bold">INFORMATION</span> SPACES
+      </h1>
+      <!-- <span class="text-lg font-semibold"
         >Spotlight on Artificial Intelligence and Freedom of Expression</span
-      >
+      > -->
     </div>
   </div>
 </Header>
 
 <main class="container mx-auto py-12 px-4">
-  <section class="flex flex-col md:flex-row md:space-x-20 items-center">
-    <div class="w-100 md:w-5/12">
-      <p class="text-blue mb-4 font-bold">
-        We are witnessing a seismic shift in the global information ecosystem – a few tech companies
-        are shaping how information is produced, distributed, accessed, and monetized. The high
-        concentration of power associated with artificial intelligence, the lack of transparency,
-        human rights due diligence and accountability threaten the integrity, plurality and
-        independence of the information landscape. This has a direct and significant impact on
-        global peace, stability, and comprehensive security.
-      </p>
-      <p class="text-blue mb-4 font-bold">
-        States have to protect, promote, and fulfil media freedom by ensuring an environment that
-        enables democratic debate. In order to strengthen resilience and security, we need human
-        rights-based regulation and a multi-stakeholder approach in designing online information
-        spaces that safeguard media pluralism, independence, and public interest over distortion,
-        deception, and division.
-      </p>
-      <p class="text-blue mb-4 font-bold">
-        Jan Braathu <span class="font-normal block"
-          >OSCE Representative on Freedom of the Media</span
+  <section class="flex flex-col gap-8">
+    <div class="max-w-[758px] mx-auto">
+      <div class="grid gap-x-2" style="grid-template-columns: auto 1fr auto;">
+        <span
+          style="font-family: Baskerville, 'Libre Baskerville', Georgia, serif; font-size: 40px; line-height: 24px; font-weight: 700; color: var(--color-blue); grid-row: 1; align-self: start;"
+          >&ldquo;</span
         >
-      </p>
+        <div style="grid-row: 1;">
+          <p class="text-blue mb-4 font-semibold leading-6 text-justify">
+            We are witnessing a seismic shift in the global information ecosystem – a few tech
+            companies are shaping how information is produced, distributed, accessed, and monetized.
+            The high concentration of power associated with artificial intelligence, the lack of
+            transparency, human rights due diligence and accountability threaten the integrity,
+            plurality and independence of the information landscape. This has a direct and
+            significant impact on global peace, stability, and comprehensive security.
+          </p>
+          <p class="text-blue font-semibold leading-6 text-justify">
+            States have to protect, promote, and fulfil media freedom by ensuring an environment
+            that enables democratic debate. In order to strengthen resilience and security, we need
+            human rights-based regulation and a multi-stakeholder approach in designing online
+            information spaces that safeguard media pluralism, independence, and public interest
+            over distortion, deception, and division.
+          </p>
+        </div>
+        <span
+          style="font-family: Baskerville, 'Libre Baskerville', Georgia, serif; font-size: 40px; line-height: 24px; font-weight: 700; color: var(--color-blue); grid-row: 1; align-self: end;"
+          >&rdquo;</span
+        >
+        <div class="flex justify-end mt-2" style="grid-row: 2; grid-column: 2;">
+          <p class="text-right text-blue font-bold">
+            Jan Braathu<br />
+            OSCE Representative on Freedom of the Media (RFoM)
+          </p>
+        </div>
+      </div>
     </div>
 
-    <ShadowBox class="w-100 md:w-7/12">
+    <ShadowBox>
       <svelte:fragment>
-        <p class="mb-4">
+        <p class="mb-4 text-justify">
           This resource hub is meant for policymakers and other stakeholders to help ensure that
           digital technologies work for the benefit of society by safeguarding freedom of expression
           and media freedom, and by promoting a healthy, pluralistic, and independent online
@@ -63,11 +80,14 @@
           freedom of expression, and provides resources and recommendations on enhancing the
           availability and accessibility of public interest information online as well as on
           platform, content and internet governance more broadly. Explore these topics, including
-          policy manuals, Dos and Don’ts, and additional resources.
+          policy manuals (<span class="font-bold">2022</span> and
+          <span class="font-bold">2025</span>), <span class="font-bold">Do’s and Don’ts</span>, and
+          additional <span class="font-bold">resources</span>.
         </p>
 
-        <div class="flex">
-          <a href={`${base}/resources`} class="group flex items-center space-x-2 hover:border-none">
+        <div class="flex justify-end">
+          <a href={`${base}/about`} class="group flex items-center gap-6 hover:border-none">
+            About the OSCE RFoM’s work on AI
             <span class="rounded-full border-2 border-blue p-2 shrink-0">
               <Chevron
                 class="w-6 h-6 stroke-blue-osce transition-transform duration-300 group-hover:translate-x-1"
@@ -82,7 +102,7 @@
   <section class="mt-12">
     <ShadowBox>
       <div class="flex justify-between items-center">
-        <h3 class="font-bold leading-8 text-3xl">Content</h3>
+        <h3 class="font-bold leading-8 text-3xl">Contents</h3>
 
         <h4 class="flex items-center leading-8 font-bold text-2xl space-x-2">
           <h4 class="mt-4 py-4 leading-8 font-bold text-2xl ml-auto">
@@ -97,7 +117,7 @@
         </h4>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 mt-12 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 mt-12 gap-x-6 gap-y-10">
         <HomeGlossaryBox title="Resources" href={`${base}/resources`}>
           <img
             slot="image"
@@ -130,7 +150,7 @@
         >
           <img
             slot="image"
-            class="w-full aspect-[387/230] rounded-xl object-cover"
+            class="w-full aspect-[420/252] rounded-xl object-cover"
             src={policyManualImage2025}
             alt="Policy Manual on Safeguarding Media Freedom in the Age of Big Tech Platforms and AI (2025)"
           />
@@ -142,14 +162,14 @@
         </HomeGlossaryBox>
 
         <HomeGlossaryBox
-          title="Conference on “Healthy Online Information Spaces: From Policy Guidance to Pathways Forward”"
+          title="Healthy Online Information Spaces Conference (2025)"
           href={`${base}/conference-2025`}
         >
           <img
             slot="image"
-            class="w-full aspect-[387/230] rounded-xl object-cover"
+            class="w-full aspect-[420/252] rounded-xl object-cover"
             src={conferenceImage2025}
-            alt="Conference on “Healthy Online Information Spaces: From Policy Guidance to Pathways Forward”"
+            alt={conferenceTitle}
           />
           <p slot="description">
             A multi-stakeholder event in October 2025 providing for interactive discussions on
@@ -174,7 +194,7 @@
           </p>
         </HomeGlossaryBox>
 
-        <HomeGlossaryBox title="SAIFE Expedition" href={`${base}/expedition`}>
+        <HomeGlossaryBox title="SAIFE Expedition (2022)" href={`${base}/expedition`}>
           <img
             slot="image"
             class="w-full aspect-[409/280] rounded-xl object-cover"

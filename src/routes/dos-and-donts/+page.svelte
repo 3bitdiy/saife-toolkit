@@ -16,7 +16,7 @@
 >
   <HomeHeroIcon slot="icon" />
   <svelte:fragment>
-    <p class="text-blue-osce font-medium leading-5">
+    <p class="text-white font-medium leading-5">
       Key principles to consider when developing strategies and policies on (generative) AI and
       digital technologies. Click <a
         href="https://rfom.osce.org/representative-on-freedom-of-media/510332"
