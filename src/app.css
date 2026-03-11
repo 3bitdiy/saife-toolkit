@@ -14,30 +14,17 @@ body {
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: "Inter var";
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: normal;
-    font-named-instance: "Regular";
-    src: local("./fonts/Inter-roman.var.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Inter var";
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: italic;
-    font-named-instance: "Italic";
-    src: local("./fonts/Inter-italic.var.woff2") format("woff2");
-  }
+:root {
+  --color-blue: #154678;
+}
 
+@layer base {
   html {
     @apply min-h-screen;
   }
 
   body {
-    @apply font-sans bg-blue-light text-blue;
+    @apply font-sans bg-white text-blue;
     font-size: 16px;
   }
 
@@ -60,7 +47,7 @@ body {
 
 @layer components {
   .container {
-    @apply max-w-5xl xl:max-w-7xl px-4 self-center;
+    @apply max-w-[950px] xl:max-w-7xl px-4 self-center;
   }
 
   .header-light {
@@ -69,8 +56,8 @@ body {
   }
 
   .header-dark {
-    @apply bg-blue bg-repeat;
-    background-image: url("/images/header-dark.png");
+    @apply bg-blue bg-repeat-x;
+    background-image: url("/images/header-dark.svg");
   }
 
   .shadow-box {
@@ -131,7 +118,7 @@ body {
   @apply no-underline !important;
 }
 .freturn {
-  font-family: "Inter var", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-variant: normal;
   unicode-bidi: normal;
 }
@@ -142,7 +129,7 @@ a.freturn {
 }
 @media (min-width: 1280px) {
   .container {
-    max-width: 1024px !important;
+    max-width: 950px !important;
   }
 }
 .home-glossary-box img[slot="image"] {
@@ -155,7 +142,7 @@ a.freturn {
 }
 
 .menu-link {
-  @apply block w-full box-border border-2 border-solid border-blue-osce rounded-lg font-bold py-2 px-4 text-left whitespace-nowrap transition-colors;
+  @apply block w-full box-border border-2 border-solid border-blue rounded-lg font-bold py-2 px-4 text-left whitespace-nowrap transition-colors;
 }
 
 .menu-link:hover,
@@ -163,5 +150,5 @@ a.freturn {
 .menu-link:active,
 .menu-link:focus-visible {
   border: 2px solid !important;
-  border-color: rgb(51 82 144) !important;
+  border-color: var(--color-blue) !important;
 }

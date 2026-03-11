@@ -14,7 +14,7 @@
       href="https://rfom.osce.org/representative-on-freedom-of-media/598525"
       target="_blank"
       rel="noopener noreferrer"
-      class="underline text-blue-osce">here</a
+      class="underline text-white">here</a
     >.
   </p>
 </CommonHeader>

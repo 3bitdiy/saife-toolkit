@@ -1,4 +1,9 @@
-<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<script>
+  let clazz = '';
+  export { clazz as class };
+</script>
+
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class={clazz}>
   <rect width="60" height="60" class="hamburger-icon-bg" />
   <path
     d="M21.875 23.6201H38.125"
@@ -29,11 +34,11 @@
     transition: fill 0.2s;
   }
   .hamburger-icon-path {
-    stroke: rgb(36, 57, 101);
+    stroke: var(--color-blue);
     transition: stroke 0.2s;
   }
   svg:hover .hamburger-icon-bg {
-    fill: rgb(36, 57, 101);
+    fill: var(--color-blue);
   }
   svg:hover .hamburger-icon-path {
     stroke: white;

@@ -6,6 +6,7 @@
 
   let clazz = "";
   export {clazz as class};
+  const year = new Date().getFullYear();
 </script>
 
 <footer class={c("text-white bg-blue-osce min-h-[128px] py-8 px-2 md:px-0", clazz)}>
@@ -16,12 +17,10 @@
       <p class="text-sm leading-6">
         This resource hub was supported by Ranking Digital Rights in 2022, a public-interest
         research program that advances corporate accountability for human rights in the digital age.
-        RDR works with an ecosystem of stakeholders to set global standards for how private tech
-        companies can govern and operate platforms and services that advance freedom of expression,
-        information, and privacy.
+        It has subsequently been updated by the OSCE RFoM.
       </p>
       <p class="font-bold text-sm leading-6 whitespace-nowrap mt-6">
-        © 2023 OSCE All rights reserved.
+        © {year} OSCE All rights reserved.
       </p>
     </div>
 
