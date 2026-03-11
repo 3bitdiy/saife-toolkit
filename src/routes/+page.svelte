@@ -84,7 +84,7 @@
           <a href={`${base}/policy-2025`} class="font-bold hover:underline">2025</a>),
           <a href={`${base}/dos-and-donts`} class="font-bold hover:underline">Do’s and Don’ts</a>,
           and additional
-          <a href={`${base}/resources`} class="font-bold hover:underline">resources</a>.
+          <a href={`${base}/resources`} class="font-bold hover:underline">Resources</a>.
         </p>
 
         <div class="flex justify-end">
