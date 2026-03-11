@@ -35,12 +35,12 @@
   <svelte:fragment>
     <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
       {#if Image}
-        <enhanced:img class="md:max-w-xs" src={Image} alt="Resource image" />
+        <enhanced:img class="w-full md:w-auto md:max-w-xs" src={Image} alt="Resource image" />
       {/if}
 
       <div class="flex flex-col gap-6">
         <CategoryTag {category} />
-        <h2 class="text-[30px] leading-9 font-extrabold">{title}</h2>
+        <h2 class="text-xl md:text-[30px] leading-9 font-extrabold">{title}</h2>
         {#if subtitle}<p class="text-black italic font-thin">{subtitle}</p>{/if}
         {#if description}<p>{description}</p>{/if}
         <!-- {#if href}

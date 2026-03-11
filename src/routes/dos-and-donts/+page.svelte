@@ -34,7 +34,7 @@
 </CommonHeader>
 
 <main class="container mx-auto py-12 px-4 flex flex-col md:flex-row md:space-x-16">
-  <section class="w-100 md:w-1/2">
+  <section class="w-full md:w-1/2">
     <h2 class="flex items-center space-x-2 mb-10">
       <Do class="w-8 h-8 bg-green p-1.5 rounded-md" />
       <span class="font-extrabold leading-8 tracking-tight text-3xl text-black">Do</span>
@@ -45,7 +45,7 @@
     {/each}
   </section>
 
-  <section class="w-100 md:w-1/2">
+  <section class="w-full md:w-1/2">
     <h2 class="flex items-center space-x-2 mb-10">
       <Dont class="w-8 h-8" />
       <span class="font-extrabold leading-8 tracking-tight text-3xl text-black">Don't</span>

@@ -17,11 +17,11 @@
 </script>
 
 <Header theme="dark">
-  <div class="flex items-center justify-center gap-12 h-full">
-    <img alt="SAIFE Toolkit Logo" src={saifeLogo} />
+  <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 h-full">
+    <img alt="SAIFE Toolkit Logo" src={saifeLogo} class="w-28 sm:w-auto shrink-0" />
 
-    <div class="text-white flex flex-col items-start max-w-xl">
-      <h1 class="text-[2.8rem] leading-none">
+    <div class="text-white flex flex-col items-center sm:items-start sm:max-w-xl">
+      <h1 class="text-2xl sm:text-[2.8rem] leading-none text-center sm:text-left">
         TOWARDS <span class="font-bold">HEALTHY</span> ONLINE
         <span class="font-bold">INFORMATION</span> SPACES
       </h1>
@@ -103,19 +103,17 @@
 
   <section class="mt-12">
     <ShadowBox>
-      <div class="flex justify-between items-center">
-        <h3 class="font-bold leading-8 text-3xl">Contents</h3>
+      <div class="flex flex-wrap justify-between items-center gap-x-4 gap-y-2">
+        <h3 class="font-bold leading-8 text-2xl md:text-3xl">Contents</h3>
 
-        <h4 class="flex items-center leading-8 font-bold text-2xl space-x-2">
-          <h4 class="mt-4 py-4 leading-8 font-bold text-2xl ml-auto">
-            <a
-              href={`${base}/glossary`}
-              class="flex items-center space-x-2"
-              style="text-decoration: none;"
-            >
-              <GlossaryIcon class="h-12" /> <span>Glossary</span>
-            </a>
-          </h4>
+        <h4 class="py-2 leading-8 font-bold text-2xl">
+          <a
+            href={`${base}/glossary`}
+            class="flex items-center space-x-2"
+            style="text-decoration: none;"
+          >
+            <GlossaryIcon class="h-12" /> <span>Glossary</span>
+          </a>
         </h4>
       </div>
 
