@@ -7,15 +7,13 @@
   title="Spotlight on Artificial Intelligence and Freedom of Expression – A Policy Manual"
 >
   <HomeHeroIcon slot="icon" />
-  <p class="”text-white" font-medium leading-5”>
+  <p class="text-white font-medium leading-5">
     This publication is part of the project “Spotlight on Artificial Intelligence and Freedom of
     Expression” (#SAIFE) and was presented in 2022. The Policy Manual can be downloaded
     <a
-      href="”https://rfom.osce.org/representative-on-freedom-of-media/510332”"
-      rel="”noopener"
-      noreferrer”
-      class="”underline"
-      text-white”>here</a
+      href="https://rfom.osce.org/representative-on-freedom-of-media/510332"
+      rel="noopener noreferrer"
+      class="underline text-white">here</a
     >.
   </p>
 </CommonHeader>
