@@ -19,7 +19,7 @@
 </CommonHeader>
 
 <main class="container mx-auto py-12 px-4">
-  <h2 class="font-extrabold text-3xl leading-9 my-12">
+  <h2 class="font-extrabold text-2xl md:text-3xl leading-9 my-12">
     Key Recommendations for OSCE Participating States
   </h2>
 
@@ -99,7 +99,7 @@
     </li>
   </ol>
 
-  <h2 class="font-extrabold text-3xl leading-9 my-12">EXPERTS</h2>
+  <h2 class="font-extrabold text-2xl md:text-3xl leading-9 my-12">EXPERTS</h2>
 
   <h3 class="font-bold leading-6 my-6">Authors</h3>
 

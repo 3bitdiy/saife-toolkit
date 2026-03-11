@@ -11,7 +11,7 @@
 
 <footer class={c("text-white bg-blue-osce min-h-[128px] py-8 px-2 md:px-0", clazz)}>
   <div
-    class="container mx-auto h-full space-y-4 md:flex md:items-center md:justify-center md:space-x-48"
+    class="container mx-auto h-full space-y-4 md:flex md:items-center md:justify-center md:space-x-12 lg:space-x-48"
   >
     <div>
       <p class="text-sm leading-6">
@@ -25,7 +25,7 @@
     </div>
 
     <svg
-      class="h-20 md:h-56"
+      class="h-20 md:h-32 lg:h-56"
       viewBox="0 0 103 67"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
