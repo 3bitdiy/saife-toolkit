@@ -1,4 +1,4 @@
-import{s as v,f as h,a as _,g as f,u,c as x,j as p,i as l,y as w,d as m}from"../chunks/scheduler.d61d7e3e.js";import{S as $,i as C,b,d as y,m as k,a as j,t as P,e as T}from"../chunks/index.0e2ed24a.js";import{C as q}from"../chunks/common-header.c69a757e.js";function A(d){let e,o=`Researchers, advocates, and journalists around the world are working to expose how AI systems
+import{s as v,f as h,a as _,g as f,u,c as x,j as p,i as l,y as w,d as m}from"../chunks/scheduler.d61d7e3e.js";import{S as $,i as C,b,d as y,m as k,a as j,t as P,e as T}from"../chunks/index.0e2ed24a.js";import{C as q}from"../chunks/common-header.1f0c5686.js";function A(d){let e,o=`Researchers, advocates, and journalists around the world are working to expose how AI systems
       are altering our information environments—and the risks and challenges this poses to online
       expression, media freedom, and other human rights.`,t,s,i=`The following case studies highlight key examples in which AI-driven content curation or
       moderation have been deployed by online platforms in ways that have limited or risked freedom
