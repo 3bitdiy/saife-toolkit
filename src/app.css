@@ -31,6 +31,7 @@ body {
   a {
     @apply cursor-pointer font-bold focus-ring transition-all border-none border-b-2 border-blue hover:border-solid;
     max-width: fit-content;
+    overflow-wrap: break-word;
     outline: none !important;
     box-shadow: none !important;
   }
@@ -47,7 +48,7 @@ body {
 
 @layer components {
   .container {
-    @apply max-w-[950px] xl:max-w-7xl px-4 self-center;
+    @apply max-w-[950px] px-4 self-center;
   }
 
   .header-light {
@@ -127,11 +128,6 @@ a.freturn {
   font-variant: normal;
   unicode-bidi: normal;
 }
-@media (min-width: 1280px) {
-  .container {
-    max-width: 950px !important;
-  }
-}
 .home-glossary-box img[slot="image"] {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
@@ -142,7 +138,7 @@ a.freturn {
 }
 
 .menu-link {
-  @apply block w-full box-border border-2 border-solid border-blue rounded-lg font-bold py-2 px-4 text-left whitespace-nowrap transition-colors;
+  @apply block w-full box-border border-2 border-solid border-blue rounded-lg font-bold py-2 px-4 text-left transition-colors;
 }
 
 .menu-link:hover,

@@ -5,12 +5,12 @@
 </script>
 
 <Header>
-  <div class="flex items-center h-full">
-    <div class="flex justify-center space-x-4">
-      <div class="flex items-start text-white space-x-4">
+  <div class="flex items-start lg:items-center h-full">
+    <div class="flex justify-center">
+      <div class="flex flex-col sm:flex-row items-start text-white gap-4">
         <slot name="icon" />
         <div>
-          <h1 class="font-bold text-3xl leading-8 pb-4">{title}</h1>
+          <h1 class="font-bold text-2xl md:text-3xl leading-8 pb-4">{title}</h1>
           <div class="[&_p]:leading-6"><slot /></div>
         </div>
       </div>

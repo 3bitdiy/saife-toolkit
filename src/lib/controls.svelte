@@ -52,12 +52,12 @@
   </button>
 
   {#if isOpen}
-    <div class="absolute right-0 top-[60px] w-max py-4 px-4 bg-white flex flex-col gap-3">
+    <div class="absolute right-0 top-[60px] w-[min(340px,calc(100vw-1rem))] py-4 px-4 bg-white flex flex-col gap-3">
       {#each menuItems as item}
         {#if item.type === "item"}
           <a
             href={item.href}
-            class={"menu-link !block min-w-full box-border border-2 border-solid border-blue rounded-lg font-bold py-2 px-4 transition-colors text-left whitespace-nowrap " +
+            class={"menu-link !block min-w-full box-border border-2 border-solid border-blue rounded-lg font-bold py-2 px-4 transition-colors text-left " +
               ($page.url.pathname === item.href
                 ? "bg-blue text-white"
                 : "bg-white text-blue hover:bg-blue hover:text-white")}
