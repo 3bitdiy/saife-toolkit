@@ -35,7 +35,12 @@
   <svelte:fragment>
     <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
       {#if Image}
-        <enhanced:img class="w-full md:w-auto md:max-w-xs" src={Image} alt="Resource image" />
+        <enhanced:img
+          class="w-full md:w-auto md:max-w-xs"
+          src={Image}
+          alt="Resource image"
+          loading="lazy"
+        />
       {/if}
 
       <div class="flex flex-col gap-6">

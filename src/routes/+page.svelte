@@ -21,7 +21,7 @@
     <img alt="SAIFE Toolkit Logo" src={saifeLogo} class="w-28 sm:w-auto shrink-0" />
 
     <div class="text-white flex flex-col items-center sm:items-start sm:max-w-xl">
-      <h1 class="text-2xl sm:text-[2.8rem] leading-none text-center sm:text-left">
+      <h1 class="text-2xl sm:text-[2.8rem] leading-none text-center sm:text-left sm:tracking-wide">
         TOWARDS <span class="font-bold">HEALTHY</span> ONLINE
         <span class="font-bold">INFORMATION</span> SPACES
       </h1>
