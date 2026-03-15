@@ -53,7 +53,7 @@
 
   {#if isOpen}
     <div
-      class="absolute right-0 top-[60px] w-[min(340px,calc(100vw-1rem))] py-4 px-4 bg-white flex flex-col gap-3"
+      class="absolute right-0 top-[60px] w-[min(340px,calc(100vw-1rem))] py-4 px-4 bg-white flex flex-col gap-3 z-50"
     >
       {#each menuItems as item}
         {#if item.type === "item"}

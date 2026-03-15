@@ -62,11 +62,11 @@
   </p>
 </CommonHeader>
 
-<main class="container mx-auto py-12 px-4 flex flex-col">
+<main class="container mx-auto py-0 sm:py-12 px-4 flex flex-col">
   <div class="flex flex-col items-center min-h-[120px] justtify-center">
     <!-- Tag Filter -->
     <div
-      class="flex flex-col sm:flex-row gap-3 sm:gap-10 justify-center items-stretch sm:items-center pt-4 pb-4 w-full sm:w-auto mx-auto"
+      class="flex flex-col sm:flex-row gap-3 sm:gap-10 justify-center items-stretch sm:items-center pt-6 pb-0 sm:pb-4 w-full sm:w-auto mx-auto"
     >
       <button
         class="self-stretch flex items-center w-full sm:w-auto"
@@ -91,13 +91,13 @@
     </div>
 
     <!-- Tag filter -->
-    <div class="flex flex-col sm:flex-row justify-center mb-12 w-full sm:w-auto mx-auto">
+    <div class="flex flex-col sm:flex-row justify-center mb-6 sm:mb-12 w-full sm:w-auto mx-auto">
       {#if activeTag}
         <button
           type="button"
           class="
             inline-flex items-center justify-center w-full sm:w-auto whitespace-normal break-words
-            px-[15px] py-[12px] sm:py-[8px] mt-8 mb-4 rounded-[28px] border
+            px-[15px] py-[12px] sm:py-[8px] mt-6 sm:mt-8 mb-0 rounded-[28px] border
             text-base sm:text-sm font-semibold leading-5
             !bg-blue-osce !text-white !border-blue-osce
             active:bg-blue-osce active:text-white active:border-blue-osce
