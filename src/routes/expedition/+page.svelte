@@ -12,7 +12,7 @@
 </CommonHeader>
 
 <main class="container mx-auto py-12 px-4">
-  <h2 class="font-extrabold text-3xl leading-9 mb-12">Conference description</h2>
+  <h2 class="font-extrabold text-2xl md:text-3xl leading-9 mb-12">Conference description</h2>
 
   <p class="mb-4 leading-6">
     In December 2022, the OSCE RFoM organized a special conference: the SAIFE Expedition. The event
