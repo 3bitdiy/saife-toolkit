@@ -45,7 +45,7 @@
           allowfullscreen
         />
       </div>
-      <p class="mt-4"><a href={`${base}/policy`} class="text-blue-osce">Policy Manual (2022)</a></p>
+      <p class="mt-8"><a href={`${base}/policy`} class="text-blue-osce">Policy Manual (2022)</a></p>
     </div>
   </Box>
 
