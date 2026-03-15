@@ -13,7 +13,7 @@
 
 <div
   class={c(
-    "h-[52px] w-[152px] inline-flex items-center justify-center",
+    "h-[52px]  w-full sm:w-[152px] inline-flex items-center justify-center",
     "px-[20px] gap-[18px]",
     "rounded-[28px] border border-blue-osce",
 

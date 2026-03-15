@@ -65,16 +65,27 @@
 <main class="container mx-auto py-12 px-4 flex flex-col">
   <div class="flex flex-col items-center min-h-[120px] justtify-center">
     <!-- Tag Filter -->
-    <div class="flex flex-col sm:flex-row gap-4 sm:gap-10 justify-center items-center pt-4 pb-4">
-      <button class="self-stretch flex items-center" on:click={() => filterCategory("Read")}>
+    <div
+      class="flex flex-col sm:flex-row gap-3 sm:gap-10 justify-center items-stretch sm:items-center pt-4 pb-4 w-full sm:w-auto mx-auto"
+    >
+      <button
+        class="self-stretch flex items-center w-full sm:w-auto"
+        on:click={() => filterCategory("Read")}
+      >
         <CategoryTag category="Read" isActive={filter === "Read"} />
       </button>
 
-      <button class="self-stretch flex items-center" on:click={() => filterCategory("Listen")}>
+      <button
+        class="self-stretch flex items-center w-full sm:w-auto"
+        on:click={() => filterCategory("Listen")}
+      >
         <CategoryTag category="Listen" isActive={filter === "Listen"} />
       </button>
 
-      <button class="self-stretch flex items-center" on:click={() => filterCategory("Watch")}>
+      <button
+        class="self-stretch flex items-center w-full sm:w-auto"
+        on:click={() => filterCategory("Watch")}
+      >
         <CategoryTag category="Watch" isActive={filter === "Watch"} />
       </button>
     </div>

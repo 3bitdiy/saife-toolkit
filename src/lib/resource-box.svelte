@@ -48,21 +48,8 @@
         <h2 class="text-xl md:text-[30px] leading-9 font-extrabold">{title}</h2>
         {#if subtitle}<p class="text-black italic font-thin">{subtitle}</p>{/if}
         {#if description}<p>{description}</p>{/if}
-        <!-- {#if href}
-          <div class="mt-4 flex items-center">
-            <a {href} rel="external" class="font-semibold text-blue-osce"> Go to resource </a>
-
-            <a {href} rel="external" class="ml-4 group flex items-center hover:border-none">
-              <span class="rounded-full border-2 border-blue-osce p-2 shrink-0">
-                <Chevron
-                  class="w-5 h-5 stroke-blue-osce transition-transform duration-300 group-hover:translate-x-1"
-                />
-              </span>
-            </a>
-          </div>
-        {/if} -->
         {#if resolvedHref}
-          <div class="flex items-center">
+          <div class="flex items-center justify-end sm:justify-start">
             <a href={resolvedHref} rel="external" class="font-semibold text-blue-osce">
               Go to resource
             </a>
@@ -85,15 +72,15 @@
 
     <hr class="my-10 bg-blue h-[3px]" />
 
-    <div class="flex flex-wrap gap-4 items-center">
+    <div class="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4 sm:items-center">
       <span class="font-extrabold text-xl leading-[1.2]">Tags:</span>
       {#each tags as tag}
         <button
           type="button"
           class={c(
-            "inline-flex items-center max-w-full whitespace-normal break-words",
-            "px-[15px] py-[8px] rounded-[28px] border",
-            "text-sm font-semibold leading-5",
+            "inline-flex items-center justify-center sm:justify-start w-full sm:w-auto whitespace-normal break-words",
+            "px-[15px] py-[12px] sm:py-[8px] rounded-[28px] border",
+            "text-base sm:text-sm font-semibold leading-5",
             "bg-white text-blue border-blue",
             "hover:bg-blue hover:text-white hover:border-blue",
             "active:bg-blue active:text-white active:border-blue",
