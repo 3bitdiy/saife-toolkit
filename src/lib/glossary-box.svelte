@@ -5,7 +5,7 @@
   import Plus from "$lib/plus.svelte";
   import ShadowBox from "$lib/shadow-box.svelte";
 
-  let clazz = "bg-white p-8 rounded-[1.25rem] shadow-box shadow-blue-osce";
+  let clazz = "bg-white !py-[20px] !px-[30px] rounded-[1.25rem] shadow-box shadow-blue-osce";
   export {clazz as class};
   export let title: string;
   export let description: string;
@@ -20,14 +20,14 @@
 
 <ShadowBox class={c(clazz)} on:click={toggleCollapse}>
   <svelte:fragment>
-    <div class={c("flex justify-between items-center cursor-pointer", {"mb-10": !isCollapsed})}>
+    <div class={c("flex justify-between items-center cursor-pointer", {"mb-[30px]": !isCollapsed})}>
       <h2 class="text-lg uppercase font-extrabold">{title}</h2>
 
       <button type="button" on:click|stopPropagation={toggleCollapse}>
         {#if isCollapsed}
-          <Plus class="w-10 h-10" />
+          <Plus class="w-[30px] h-[30px]" />
         {:else}
-          <Minus class="w-10 h-10" />
+          <Minus class="w-[30px] h-[30px]" />
         {/if}
       </button>
     </div>

@@ -16,9 +16,9 @@
   };
 </script>
 
-<ShadowBox class={c(clazz)} on:click={toggleCollapse}>
+<ShadowBox class={c("!py-[20px] !px-[30px]", clazz)} on:click={toggleCollapse}>
   <svelte:fragment>
-    <div class={c("flex justify-between items-center cursor-pointer", {"mb-10": !isCollapsed})}>
+    <div class={c("flex justify-between items-center cursor-pointer", {"mb-[30px]": !isCollapsed})}>
       <h2 class="text-lg uppercase font-extrabold">{title}</h2>
 
       <button
@@ -27,9 +27,9 @@
         on:click|stopPropagation={toggleCollapse}
       >
         {#if isCollapsed}
-          <Plus class="w-10 h-10" />
+          <Plus class="w-[30px] h-[30px]" />
         {:else}
-          <Minus class="w-10 h-10" />
+          <Minus class="w-[30px] h-[30px]" />
         {/if}
       </button>
     </div>

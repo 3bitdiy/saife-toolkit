@@ -28,7 +28,7 @@
     of Expression: A SAIFE Expedition | OSCE.
   </p>
 
-  <Box class="mb-8" title="SAIFE Expedition Documents">
+  <Box class="mb-[30px]" title="SAIFE Expedition Documents">
     <ul class="space-y-2 list-disc list-inside">
       <li>
         <a href="https://www.osce.org/representative-on-freedom-of-media/534807"
@@ -53,7 +53,7 @@
     </ul>
   </Box>
 
-  <Box class="mb-8" title="Panel: Content Governance in Times of Crises">
+  <Box class="mb-[30px]" title="Panel: Content Governance in Times of Crises">
     <div class="my-2 aspect-video w-full">
       <iframe
         class="w-full h-full"
@@ -74,7 +74,7 @@
     >
   </Box>
 
-  <Box class="mb-8" title="Panel: Public Interest Framework in the Digital Realm">
+  <Box class="mb-[30px]" title="Panel: Public Interest Framework in the Digital Realm">
     <div class="my-2 aspect-video w-full">
       <iframe
         class="w-full h-full"
@@ -97,7 +97,7 @@
     >
   </Box>
 
-  <Box class="mb-8" title="Additional conference resources">
+  <Box class="mb-[30px]" title="Additional conference resources">
     <ul class="space-y-2 list-disc list-inside">
       <li>
         <a

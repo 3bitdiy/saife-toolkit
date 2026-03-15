@@ -16,7 +16,7 @@
   </p>
 </CommonHeader>
 
-<main class="container mx-auto py-12 px-4 flex flex-col space-y-12">
+<main class="container mx-auto py-12 px-4 flex flex-col space-y-[30px]">
   {#each data.glossary as { title, description, sections }}
     <GlossaryBox {title} {description} {sections} />
   {/each}
