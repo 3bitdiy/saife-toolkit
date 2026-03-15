@@ -65,7 +65,7 @@
 <main class="container mx-auto py-12 px-4 flex flex-col">
   <div class="flex flex-col items-center min-h-[120px] justtify-center">
     <!-- Tag Filter -->
-    <div class="flex flex-wrap gap-10 justify-center items-center pt-4 pb-4">
+    <div class="flex flex-col sm:flex-row gap-4 sm:gap-10 justify-center items-center pt-4 pb-4">
       <button class="self-stretch flex items-center" on:click={() => filterCategory("Read")}>
         <CategoryTag category="Read" isActive={filter === "Read"} />
       </button>
