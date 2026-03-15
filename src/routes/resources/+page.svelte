@@ -91,14 +91,14 @@
     </div>
 
     <!-- Tag filter -->
-    <div class="flex justify-center mb-12">
+    <div class="flex flex-col sm:flex-row justify-center mb-12 w-full sm:w-auto mx-auto">
       {#if activeTag}
         <button
           type="button"
           class="
-            inline-flex items-center max-w-full whitespace-normal break-words
-            px-[15px] py-[8px] mt-8 mb-4 rounded-[28px] border
-            text-sm font-semibold leading-5
+            inline-flex items-center justify-center w-full sm:w-auto whitespace-normal break-words
+            px-[15px] py-[12px] sm:py-[8px] mt-8 mb-4 rounded-[28px] border
+            text-base sm:text-sm font-semibold leading-5
             !bg-blue-osce !text-white !border-blue-osce
             active:bg-blue-osce active:text-white active:border-blue-osce
             focus-visible:bg-blue-osce focus-visible:text-white focus-visible:border-blue-osce
