@@ -138,7 +138,7 @@ a.freturn {
 }
 
 .menu-link {
-  @apply block w-full box-border border-2 border-solid border-blue-osce rounded-lg font-bold py-2 px-4 text-left transition-colors;
+  @apply block w-full box-border border-2 border-solid border-blue-osce rounded-lg font-bold text-left transition-colors;
 }
 
 .menu-link:hover,

@@ -24,16 +24,24 @@
 
   const menuItems = [
     // {type: "divider"},
-    {description: "Learn More About This Resource Hub", href: `${base}/essay`, type: "item"},
+    {description: "About the OSCE RFoM’s work on AI", href: `${base}/about`, type: "item"},
+    {description: "Learn more about this Resource Hub", href: `${base}/essay`, type: "item"},
     {description: "Resources", href: `${base}/resources`, type: "item"},
     {description: "Dos and Don'ts", href: `${base}/dos-and-donts`, type: "item"},
-    {description: "Policy Manual (2025)", href: `${base}/policy-2025`, type: "item"},
+    {
+      description: "Policy Manual Media Freedom on AI (2025)",
+      href: `${base}/policy-2025`,
+      type: "item",
+    },
     {description: "Conference (2025)", href: `${base}/conference-2025`, type: "item"},
-    {description: "Policy Manual (2022)", href: `${base}/policy`, type: "item"},
+    {
+      description: "Policy Manual on Free Expression and AI (2022)",
+      href: `${base}/policy`,
+      type: "item",
+    },
     {description: "Conference (2022)", href: `${base}/expedition`, type: "item"},
     {description: "Made to Measure", href: "https://www.madetomeasure.online/en/", type: "item"},
     {description: "Glossary", href: `${base}/glossary`, type: "item"},
-    {description: "About the OSCE #SAIFE project", href: `${base}/about`, type: "item"},
   ];
 
   beforeNavigate(closeDropdown);
@@ -41,25 +49,25 @@
 
 <svelte:window on:click={onWindowClick} />
 
-<div bind:this={container} class="bg-white flex items-center relative">
+<div bind:this={container} class="flex items-center relative">
   <!-- <a href={`${base}`}> -->
   <a href={base || "/"}>
-    <Home />
+    <Home class="w-[48px] h-[48px] min-[335px]:w-[60px] min-[335px]:h-[60px]" />
   </a>
 
   <button on:click={toggleDropdown}>
-    <Hamburger />
+    <Hamburger class="w-[48px] h-[48px] min-[335px]:w-[60px] min-[335px]:h-[60px]" />
   </button>
 
   {#if isOpen}
     <div
-      class="absolute right-0 top-[60px] w-[min(340px,calc(100vw-1rem))] py-4 px-4 bg-white flex flex-col gap-3 z-50"
+      class="absolute right-0 top-[60px] w-screen sm:w-[418px] py-4 px-4 bg-white flex flex-col gap-3 z-50 overflow-y-auto max-h-[calc(100vh-60px)] sm:max-h-none"
     >
       {#each menuItems as item}
         {#if item.type === "item"}
           <a
             href={item.href}
-            class={"menu-link !block min-w-full box-border border-2 border-solid border-blue-osce rounded-lg font-bold py-2 px-4 transition-colors text-left " +
+            class={"menu-link !block min-w-full max-[411px]:max-w-[325px] box-border border-2 border-solid border-blue-osce rounded-lg font-bold py-1.5 px-3 sm:py-2 sm:px-4 text-sm min-[412px]:text-base transition-colors text-left " +
               ($page.url.pathname === item.href
                 ? "bg-blue-osce text-white"
                 : "bg-white text-blue-osce hover:bg-blue-osce hover:text-white")}

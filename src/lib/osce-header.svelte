@@ -5,7 +5,10 @@
 </script>
 
 <header class="h-[60px] bg-blue-osce flex justify-between">
-  <a class="flex items-center px-4 space-x-4 hover:border-none" href="https://osce.org">
+  <a
+    class="flex items-center px-2 min-[335px]:px-4 space-x-2 min-[335px]:space-x-4 hover:border-none"
+    href="https://osce.org"
+  >
     <ArrowLeft class="h-5 w-5 shrink-0" />
     <OsceLogo class="h-10" />
     <span class="leading-5 text-white whitespace-nowrap hidden sm:block">back to osce.org</span>
