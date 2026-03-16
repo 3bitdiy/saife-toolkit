@@ -23,7 +23,7 @@
 
 <style>
   .home-icon-bg {
-    fill: var(--color-blue);
+    fill: #243965;
     transition: fill 0.2s;
   }
   .home-icon-path {
@@ -34,6 +34,6 @@
     fill: white;
   }
   svg:hover .home-icon-path {
-    stroke: var(--color-blue);
+    stroke: #243965;
   }
 </style>

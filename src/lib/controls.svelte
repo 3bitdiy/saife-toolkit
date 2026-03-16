@@ -59,10 +59,10 @@
         {#if item.type === "item"}
           <a
             href={item.href}
-            class={"menu-link !block min-w-full box-border border-2 border-solid border-blue rounded-lg font-bold py-2 px-4 transition-colors text-left " +
+            class={"menu-link !block min-w-full box-border border-2 border-solid border-blue-osce rounded-lg font-bold py-2 px-4 transition-colors text-left " +
               ($page.url.pathname === item.href
-                ? "bg-blue text-white"
-                : "bg-white text-blue hover:bg-blue hover:text-white")}
+                ? "bg-blue-osce text-white"
+                : "bg-white text-blue-osce hover:bg-blue-osce hover:text-white")}
           >
             {item.description}
           </a>

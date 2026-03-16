@@ -34,11 +34,11 @@
     transition: fill 0.2s;
   }
   .hamburger-icon-path {
-    stroke: var(--color-blue);
+    stroke: #243965;
     transition: stroke 0.2s;
   }
   svg:hover .hamburger-icon-bg {
-    fill: var(--color-blue);
+    fill: #243965;
   }
   svg:hover .hamburger-icon-path {
     stroke: white;

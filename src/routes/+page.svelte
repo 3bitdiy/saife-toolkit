@@ -131,12 +131,12 @@
           </p>
         </HomeGlossaryBox>
 
-        <HomeGlossaryBox title="Do’s and Don’ts" href={`${base}/dos-and-donts`}>
+        <HomeGlossaryBox title="Dos and Don’ts" href={`${base}/dos-and-donts`}>
           <img
             slot="image"
             class="w-full aspect-[395/238] rounded-xl object-cover"
             src={dosAndDontsImage}
-            alt="Do's and Dont's"
+            alt="Dos and Don’ts"
           />
           <p slot="description">
             Recommended actions, restrictions, and guidelines for designing human rights-respecting
