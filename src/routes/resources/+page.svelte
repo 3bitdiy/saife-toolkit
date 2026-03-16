@@ -111,7 +111,7 @@
     </div>
   </div>
   <div class="flex flex-col space-y-16">
-    {#each resourceData as { title, subtitle, description, href, category, tags, image }}
+    {#each resourceData as { title, subtitle, description, href, category, tags, image } (href)}
       <ResourceBox
         {title}
         {subtitle}
