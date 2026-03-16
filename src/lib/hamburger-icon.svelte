@@ -1,9 +1,16 @@
 <script>
-  let clazz = '';
-  export { clazz as class };
+  let clazz = "";
+  export {clazz as class};
 </script>
 
-<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class={clazz}>
+<svg
+  width="60"
+  height="60"
+  viewBox="0 0 60 60"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class={clazz}
+>
   <rect width="60" height="60" class="hamburger-icon-bg" />
   <path
     d="M21.875 23.6201H38.125"
