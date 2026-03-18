@@ -6,9 +6,8 @@
   import {base} from "$app/paths";
 </script>
 
-<CommonHeader title="Spotlight on Artificial Intelligence and Freedom of Expression (#SAIFE)">
+<CommonHeader title="The OSCE RFoM’s work on AI">
   <HomeHeroIcon slot="icon" />
-  <p class="text-white font-medium leading-5">Towards Healthy Online Information Spaces</p>
 </CommonHeader>
 
 <main class="container mx-auto py-12 px-4">
@@ -46,10 +45,10 @@
     rights. The SAIFE Renewed project “Healthy Online Information Spaces” explores the evolving
     relationship between media, Big Tech and AI, concerning trends in digital authoritarianism and
     surveillance, as well as information operations. In October 2025, the OSCE Representative on
-    Freedom of the Media launched a comprehensive Policy Manual on Safeguarding Media Freedom in the
-    Age of Big Tech Platforms and AI [<i
-      >https://rfom.osce.org/representative-on-freedom-of-media/598525</i
-    >], designed to support OSCE participating States in ensuring the availability and accessibility
+    Freedom of the Media launched a comprehensive <a
+      href="https://rfom.osce.org/representative-on-freedom-of-media/598525"
+      >Policy Manual on Safeguarding Media Freedom in the Age of Big Tech Platforms and AI</a
+    >, designed to support OSCE participating States in ensuring the availability and accessibility
     of public interest journalism and reliable information in the digital era.
   </p>
 
@@ -115,10 +114,9 @@
   </ShadowBox>
 
   <ShadowBox class="my-12">
-    <div class="flex">
+    <div class="flex items-center">
       <span
-        >Go to the <a href={`${base}/resources`}>#SAIFE resources</a> to access materials and expert
-        contributions produced as part of the #SAIFE project.</span
+        >Go to the <a href={`${base}/resources`}>resources</a> to access materials and expert contributions.</span
       >
 
       <a

@@ -355,6 +355,10 @@
   </p>
   <p class="mb-2 text-sm" id="f4">
     [4] OECD.AI Policy Navigator (2026), powered by EC/OECD (2026), database of national AI
-    policies, accessed on 19/02/2026, https://oecd.ai. <a href="#b4" class="freturn">↩</a>
+    policies, accessed on 19/02/2026, <a
+      href="https://oecd.ai"
+      target="_blank"
+      rel="noopener noreferrer">https://oecd.ai</a
+    >. <a href="#b4" class="freturn">↩</a>
   </p>
 </main>

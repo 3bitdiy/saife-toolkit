@@ -6,6 +6,7 @@
 </script>
 
 <CommonHeader title="Healthy Online Information Spaces: From Policy Guidance to Pathways Forward">
+  <p class="text-white font-medium leading-5">OSCE Conference, October 2025</p>
   <HomeHeroIcon slot="icon" />
 </CommonHeader>
 
@@ -45,7 +46,6 @@
           allowfullscreen
         />
       </div>
-      <p class="mt-8"><a href={`${base}/policy`} class="text-blue-osce">Policy Manual (2022)</a></p>
     </div>
   </Box>
 
@@ -65,10 +65,24 @@
 
   <Box title="Resources">
     <ul class="font-medium leading-6 space-y-2 list-disc list-inside">
-      <li>Conference final report</li>
-      <li>Annotated agenda</li>
-      <li>List of biographies</li>
-      <li>Information package</li>
+      <li>
+        <a href="https://projects.osce.org/representative-freedom-media/662335">Final report</a>
+      </li>
+      <li>
+        <a href="https://projects.osce.org/representative-on-freedom-of-media/598546"
+          >Annotated agenda</a
+        >
+      </li>
+      <li>
+        <a href="https://projects.osce.org/representative-on-freedom-of-media/599691"
+          >List of biographies</a
+        >
+      </li>
+      <li>
+        <a href="https://projects.osce.org/representative-on-freedom-of-media/598501"
+          >Information package</a
+        >
+      </li>
     </ul>
   </Box>
 </main>

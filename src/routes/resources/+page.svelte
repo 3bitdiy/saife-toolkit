@@ -46,7 +46,18 @@
       const monthB = Number(b.month) || 0;
 
       if (yearA !== yearB) return yearB - yearA;
-      return monthB - monthA;
+      if (monthA !== monthB) return monthB - monthA;
+
+      // sortOrder: lower number = shown first within the same date group.
+      // Resources without sortOrder are sorted after those with it.
+      const orderA = a.sortOrder ? Number(a.sortOrder) : Number.MAX_SAFE_INTEGER;
+      const orderB = b.sortOrder ? Number(b.sortOrder) : Number.MAX_SAFE_INTEGER;
+      return orderA - orderB;
+
+      // --- ORIGINAL (no sortOrder) ---
+      // if (yearA !== yearB) return yearB - yearA;
+      // return monthB - monthA;
+      // --- END ORIGINAL ---
     });
 </script>
 

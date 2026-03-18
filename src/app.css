@@ -58,7 +58,7 @@ body {
 
   .header-dark {
     @apply bg-blue bg-repeat-x;
-    background-image: url("/images/header-dark.svg");
+    background-image: url("/images/header-dark-short.svg");
   }
 
   .shadow-box {

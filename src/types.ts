@@ -16,4 +16,7 @@ export type Resource = {
   category: string;
   description: string;
   tags: string[];
+  // sortOrder column: optional numeric string from the Google Sheet.
+  // Resources with a lower number appear first within the same date group.
+  sortOrder?: string;
 };

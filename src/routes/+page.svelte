@@ -17,7 +17,9 @@
 </script>
 
 <Header theme="dark">
-  <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 h-full">
+  <div
+    class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 h-full pt-[52px] lg:pt-8 sm:pb-4 lg:pb-0"
+  >
     <img alt="SAIFE Toolkit Logo" src={saifeLogo} class="shrink-0" />
 
     <div class="text-white flex flex-col items-center sm:items-start sm:max-w-xl">

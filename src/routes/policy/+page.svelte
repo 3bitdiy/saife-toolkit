@@ -9,7 +9,7 @@
   <HomeHeroIcon slot="icon" />
   <p class="text-white font-medium leading-5">
     This publication is part of the project “Spotlight on Artificial Intelligence and Freedom of
-    Expression” (#SAIFE) and was presented in 2022. The Policy Manual can be downloaded
+    Expression” (#SAIFE) and was published in 2022. The Policy Manual can be downloaded
     <a
       href="https://rfom.osce.org/representative-on-freedom-of-media/510332"
       rel="noopener noreferrer"
@@ -26,76 +26,76 @@
   <ol role="list" class="policy list-inside mb-4">
     <li>
       Protect and promote freedom of expression and other human rights as the centre of AI-related
-      strategies and policies
+      strategies and policies.
     </li>
 
     <li>
-      Preserve and foster the internet as a space for democratic participation and representation
-      and for media pluralism
+      Preserve and foster the internet as a space for democratic participation and representation,
+      and for media pluralism.
     </li>
 
     <li>
       Develop evidence-based policies, built on inclusive processes, to respond to challenges to
-      freedom of opinion, freedom of information and freedom of expression
+      freedom of opinion, freedom of information and freedom of expression.
     </li>
 
     <li>
       Promote compliance with the UN Guiding Principles on Business and Human Rights, to prevent the
-      prioritisation of profit maximisation at the expense of human rights and democratic values
+      prioritisation of profit maximisation at the expense of human rights and democratic values.
     </li>
 
     <li>
       Oblige online platforms to conduct human rights due diligence, including through human rights
       impact assessments (HRIAs) for their content governance policies and automated decision-
       making, as well as for their business practices, such as data harvesting, targeted advertising
-      and interface design
+      and interface design.
     </li>
 
     <li>
       Enforce clarity, explainability, and accessibility on the use of AI for content moderation,
-      content curation and targeted advertising
+      content curation and targeted advertising.
     </li>
 
     <li>
       Ensure that human rights protections are not fully outsourced or automated, and provide
-      transparency about any public-private- partnerships
+      transparency about any public-private- partnerships.
     </li>
 
     <li>
       Enact strong transparency frameworks, including by mandating comprehensive transparency
-      reports that contain detailed information on the use of AI
+      reports that contain detailed information on the use of AI.
     </li>
 
     <li>
       Make certain that robust remedy mechanisms against censorship and surveillance power are in
-      place, including through human review and independent appeal mechanisms
+      place, including through human review and independent appeal mechanisms.
     </li>
 
     <li>
       Guarantee strong accountability, including through independent oversight and independent
-      auditing, particularly of compliance with human rights and non-discrimination
+      auditing, particularly of compliance with human rights and non-discrimination.
     </li>
 
     <li>
       Respect the right to privacy and data protection, including by identifying limits to
       surveillance-based advertising and by ensuring robust transparency and user agency in
-      tracking- and profiling-based business practices
+      tracking- and profiling-based business practices.
     </li>
 
     <li>
       Promote media and digital literacy and strengthen users' empowerment, agency and control over
       content governance and the use of their data, including by providing the possibility to
-      opt-out of all automated decision-making
+      opt-out of all automated decision-making.
     </li>
 
     <li>
       Address unbalanced and monopolised market powers and promote plurality, and technological and
-      media innovation
+      media innovation.
     </li>
 
     <li>
-      Engage on the multilateral level to ensure human rights s afeguards in the development and
-      deployment of AI for online content curation and content moderation
+      Engage on the multilateral level to ensure human rights safeguards in the development and
+      deployment of AI for online content curation and content moderation.
     </li>
   </ol>
 

@@ -7,7 +7,7 @@
 <CommonHeader title="SAIFE Expedition">
   <HomeHeroIcon slot="icon" />
   <p class="font-medium leading-5">
-    OSCE Conference Putting a Spotlight on AI and Freedom of Expression
+    OSCE Conference Putting a Spotlight on AI and Freedom of Expression, December 2022.
   </p>
 </CommonHeader>
 
@@ -17,15 +17,18 @@
   <p class="mb-4 leading-6">
     In December 2022, the OSCE RFoM organized a special conference: the SAIFE Expedition. The event
     started with a high-level opening and screening of the interactive storytelling documentary Made
-    to Measure at Vienna’s Stadtkino, followed by a discussion with the film producers and
+    to Measure at Vienna’s Stadtkino, followed by a discussion with the film producers and a
     reception. On the next day, the event entailed two main panel discussions, one exploring the use
     of AI in promoting newsworthy and public interest content online and the other looking at online
     content governance in times of crises. Aside, the event included several parallel sessions
     co-organised with more than 50 experts from civil society, academia, OSCE executive structures,
     the industry and partner organizations. Thereby, the conference provided an interactive center
     stage for discussions on AI and free speech dialogue, bringing together OSCE participating
-    States and various stakeholders. More information can be found here: Spotlight on AI and Freedom
-    of Expression: A SAIFE Expedition | OSCE.
+    States and various stakeholders. More information can be found here: <a
+      href="https://www.osce.org/representative-on-freedom-of-media/534807"
+      >Spotlight on AI and Freedom of Expression: A SAIFE Expedition | OSCE Representative on
+      Freedom of the Media.</a
+    >
   </p>
 
   <Box class="mb-[30px]" title="SAIFE Expedition Documents">
