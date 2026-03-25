@@ -29,13 +29,13 @@
     {description: "Resources", href: `${base}/resources`, type: "item"},
     {description: "Dos and Don'ts", href: `${base}/dos-and-donts`, type: "item"},
     {
-      description: "Policy Manual Media Freedom on AI (2025)",
+      description: "Policy Manual on Media Freedom and AI (2025)",
       href: `${base}/policy-2025`,
       type: "item",
     },
     {description: "Conference (2025)", href: `${base}/conference-2025`, type: "item"},
     {
-      description: "Policy Manual on Free Expression and AI (2022)",
+      description: "Policy Manual on Freedom of Expression and AI (2022)",
       href: `${base}/policy`,
       type: "item",
     },
@@ -61,7 +61,7 @@
 
   {#if isOpen}
     <div
-      class="absolute right-0 top-[60px] w-screen sm:w-[418px] py-4 px-4 bg-white flex flex-col gap-3 z-50 overflow-y-auto max-h-[calc(100vh-60px)] sm:max-h-none"
+      class="absolute right-0 top-[60px] w-screen sm:w-[463px] py-4 px-4 bg-white flex flex-col gap-3 z-50 overflow-y-auto max-h-[calc(100vh-60px)] sm:max-h-none"
     >
       {#each menuItems as item}
         {#if item.type === "item"}
