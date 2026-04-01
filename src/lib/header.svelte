@@ -5,7 +5,7 @@
 </script>
 
 <header
-  class={c("min-h-[160px] py-6 lg:h-[371px] lg:py-0", {
+  class={c("relative min-h-[160px] py-6 lg:h-[371px] lg:py-0", {
     "header-light": theme === "light",
     "header-dark": theme === "dark",
   })}
@@ -13,4 +13,5 @@
   <div class="container mx-auto h-full">
     <slot />
   </div>
+  <slot name="overlay" />
 </header>

@@ -17,21 +17,30 @@
 </script>
 
 <Header theme="dark">
-  <div
-    class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 h-full pt-[52px] lg:pt-8 sm:pb-4 lg:pb-0"
-  >
-    <img alt="SAIFE Toolkit Logo" src={saifeLogo} class="shrink-0" />
-
-    <div class="text-white flex flex-col items-center sm:items-start sm:max-w-xl">
-      <h1 class="text-3xl sm:text-[2.8rem] leading-none text-center sm:text-left sm:tracking-wide">
-        TOWARDS <span class="font-bold">HEALTHY</span> ONLINE
-        <span class="font-bold">INFORMATION</span> SPACES
+  <div class="h-full flex flex-col items-center justify-center pt-[52px] lg:pt-0">
+    <div class="text-white flex flex-col items-center text-center">
+      <h1 class="font-bold text-2xl sm:text-3xl lg:text-[2rem] leading-none tracking-wide">
+        RESOURCE HUB
       </h1>
-      <!-- <span class="text-lg font-semibold"
-        >Spotlight on Artificial Intelligence and Freedom of Expression</span
-      > -->
+      <p class="text-2xl sm:text-3xl lg:text-[2rem] leading-snug lg:leading-none tracking-wide mt-3">
+        TOWARDS <span class="font-bold">HEALTHY</span> ONLINE <span class="font-bold">INFORMATION</span> SPACES
+      </p>
     </div>
+
+    <img
+      alt="SAIFE Toolkit Logo"
+      src={saifeLogo}
+      class="mt-6 h-20 sm:h-24 lg:hidden"
+    />
   </div>
+
+  <svelte:fragment slot="overlay">
+    <img
+      alt="SAIFE Toolkit Logo"
+      src={saifeLogo}
+      class="hidden lg:block absolute bottom-4 right-4 h-24"
+    />
+  </svelte:fragment>
 </Header>
 
 <main class="container mx-auto py-12 px-4">
