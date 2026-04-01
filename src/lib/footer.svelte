@@ -15,7 +15,7 @@
   >
     <div>
       <p class="text-sm leading-6">
-        This resource hub was supported by Ranking Digital Rights in 2022, a public-interest
+        This Resource Hub was supported by Ranking Digital Rights in 2022, a public-interest
         research program that advances corporate accountability for human rights in the digital age.
         It has subsequently been updated by the OSCE RFoM.
       </p>

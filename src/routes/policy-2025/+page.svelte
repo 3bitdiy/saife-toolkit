@@ -7,14 +7,14 @@
   title="Policy Manual on Safeguarding Media Freedom in the Age of Big Tech Platforms and AI"
 >
   <HomeHeroIcon slot="icon" />
-  <p class="font-medium leading-5">
+  <p class="text-white font-light leading-5">
     This publication is part of the project “Healthy Online Information Spaces” and was published in
-    2025. It can be downloaded
+    2025. <br />
     <a
       href="https://rfom.osce.org/representative-on-freedom-of-media/598525"
       target="_blank"
       rel="noopener noreferrer"
-      class="underline text-white">here</a
+      class="underline text-white font-bold">It can be downloaded HERE</a
     >.
   </p>
 </CommonHeader>

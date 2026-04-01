@@ -10,7 +10,7 @@
 
 <CommonHeader title="Glossary of key terms">
   <HomeHeroIcon slot="icon" />
-  <p class="font-medium leading-5">
+  <p class="text-white font-light leading-5">
     The following are key terms used in this toolkit to describe how AI-driven technologies are used
     to shape the online content we see, read, and share.
   </p>

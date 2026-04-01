@@ -63,7 +63,7 @@
 
 <CommonHeader title="Key resources: AI and freedom of expression">
   <HomeHeroIcon slot="icon" />
-  <p class="font-medium leading-5">
+  <p class="text-white font-light leading-5">
     The use of AI systems by digital platforms is radically reshaping our information ecosystems and
     playing a critical role in determining what we read, see, and share online. The following is a
     repository of essential resources, research, podcasts, videos, and other materials from experts

@@ -39,14 +39,16 @@
   </p>
 
   <p class="mb-4 leading-6 text-justify">
-    Building on the work carried out in the SAIFE project, in 2024, the RFoM launched the “Healthy
-    Online Information Spaces – SAIFE Renewed”, recognizing the continued need to address existing
-    and emerging challenges at the intersection of technology, information integrity and human
-    rights. The SAIFE Renewed project “Healthy Online Information Spaces” explores the evolving
-    relationship between media, Big Tech and AI, concerning trends in digital authoritarianism and
-    surveillance, as well as information operations. In October 2025, the OSCE Representative on
-    Freedom of the Media launched a comprehensive <a
-      href="https://rfom.osce.org/representative-on-freedom-of-media/598525"
+    Building on the work carried out in the SAIFE project, in 2024, the RFoM launched the <a
+      href="https://projects.osce.org/node/660912"
+      >“Healthy Online Information Spaces – SAIFE Renewed”</a
+    >
+    project, recognizing the continued need to address existing and emerging challenges at the intersection
+    of technology, information integrity and human rights. This project explores the evolving relationship
+    between media, Big Tech and AI, concerning trends in digital authoritarianism and surveillance, as
+    well as information operations. In October 2025, the OSCE Representative on Freedom of the Media
+    launched a comprehensive
+    <a href="https://rfom.osce.org/representative-on-freedom-of-media/598525"
       >Policy Manual on Safeguarding Media Freedom in the Age of Big Tech Platforms and AI</a
     >, designed to support OSCE participating States in ensuring the availability and accessibility
     of public interest journalism and reliable information in the digital era.
@@ -116,7 +118,7 @@
   <ShadowBox class="my-12">
     <div class="flex items-center">
       <span
-        >Go to the <a href={`${base}/resources`}>resources</a> to access materials and expert contributions.</span
+        >Go to the <a href={`${base}/resources`}>Resources</a> to access materials and expert contributions.</span
       >
 
       <a

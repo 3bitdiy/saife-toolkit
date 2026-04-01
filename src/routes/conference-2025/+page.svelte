@@ -6,7 +6,7 @@
 </script>
 
 <CommonHeader title="Healthy Online Information Spaces: From Policy Guidance to Pathways Forward">
-  <p class="text-white font-medium leading-5">OSCE Conference, October 2025</p>
+  <p class="text-white font-light leading-5">OSCE Conference, October 2025</p>
   <HomeHeroIcon slot="icon" />
 </CommonHeader>
 

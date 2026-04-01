@@ -6,7 +6,7 @@
 
 <CommonHeader title="SAIFE Expedition">
   <HomeHeroIcon slot="icon" />
-  <p class="font-medium leading-5">
+  <p class="text-white font-light leading-5">
     OSCE Conference Putting a Spotlight on AI and Freedom of Expression, December 2022.
   </p>
 </CommonHeader>

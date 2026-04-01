@@ -36,55 +36,33 @@
 
 <main class="container mx-auto py-12 px-4">
   <section class="flex flex-col gap-8">
-    <div class="max-w-[758px] mx-auto">
-      <div class="grid gap-x-2" style="grid-template-columns: auto 1fr auto;">
-        <span
-          style="font-family: Baskerville, 'Libre Baskerville', Georgia, serif; font-size: 40px; line-height: 24px; font-weight: 700; color: var(--color-blue); grid-row: 1; align-self: start;"
-          >&ldquo;</span
-        >
-        <div style="grid-row: 1;">
-          <p class="text-blue mb-4 font-semibold leading-6 text-justify">
-            We are witnessing a seismic shift in the global information ecosystem – a few tech
-            companies are shaping how information is produced, distributed, accessed, and monetized.
-            The high concentration of power associated with artificial intelligence, the lack of
-            transparency, human rights due diligence and accountability threaten the integrity,
-            plurality and independence of the information landscape. This has a direct and
-            significant impact on global peace, stability, and comprehensive security.
-          </p>
-          <p class="text-blue font-semibold leading-6 text-justify">
-            States have to protect, promote, and fulfil media freedom by ensuring an environment
-            that enables democratic debate. In order to strengthen resilience and security, we need
-            human rights-based regulation and a multi-stakeholder approach in designing online
-            information spaces that safeguard media pluralism, independence, and public interest
-            over distortion, deception, and division.
-          </p>
-        </div>
-        <span
-          style="font-family: Baskerville, 'Libre Baskerville', Georgia, serif; font-size: 40px; line-height: 24px; font-weight: 700; color: var(--color-blue); grid-row: 1; align-self: end;"
-          >&rdquo;</span
-        >
-        <div class="flex justify-end mt-2" style="grid-row: 2; grid-column: 2;">
-          <p class="text-right text-blue font-bold">
-            Jan Braathu<br />
-            OSCE Representative on Freedom of the Media (RFoM)
-          </p>
-        </div>
-      </div>
-    </div>
-
     <ShadowBox>
       <svelte:fragment>
         <p class="mb-4 text-justify">
-          This resource hub is meant for policymakers and other stakeholders to help ensure that
-          digital technologies work for the benefit of society by safeguarding freedom of expression
-          and media freedom, and by promoting a healthy, pluralistic, and independent online
-          information ecosystem. It focuses on the impact of (generative) AI on media freedom and
-          freedom of expression, and provides resources and recommendations on enhancing the
-          availability and accessibility of public interest information online as well as on
-          platform, content and internet governance more broadly. Explore these topics, including
-          policy manuals (<a href={`${base}/policy`} class="font-bold hover:underline">2022</a> and
+          We are witnessing a seismic shift in the global information ecosystem, with a few tech
+          companies shaping how information is produced, distributed, accessed, and monetized. The
+          concentration of power around artificial intelligence, combined with limited transparency,
+          insufficient human rights due diligence, and weak accountability threaten the integrity,
+          plurality and independence of the information landscape – with direct implications for
+          peace, stability, and security. States must protect, promote, and fulfil media freedom by
+          ensuring conditions for democratic debate, supported by human rights-based regulation and
+          a multi-stakeholder approach in designing online information spaces that safeguard media
+          pluralism, independence, and public interest over distortion, deception, and division.
+        </p>
+        <p class="mb-4 text-justify">
+          This Resource Hub by the OSCE Representative on Freedom of the Media (RFoM) supports
+          policymakers and stakeholders in ensuring that digital technologies benefit society by
+          safeguarding freedom of expression and media freedom. It focuses on the impact of
+          (generative) AI on free media and expression, and provides resources and recommendations
+          to enhance the availability and accessibility of public interest information online as
+          well as broader guidance on platform, content and internet governance. Explore these
+          topics, including policy manuals (<a
+            href={`${base}/policy`}
+            class="font-bold hover:underline">2022</a
+          >
+          and
           <a href={`${base}/policy-2025`} class="font-bold hover:underline">2025</a>),
-          <a href={`${base}/dos-and-donts`} class="font-bold hover:underline">Do’s and Don’ts</a>,
+          <a href={`${base}/dos-and-donts`} class="font-bold hover:underline">Dos and Don’ts</a>,
           and additional
           <a href={`${base}/resources`} class="font-bold hover:underline">Resources</a>.
         </p>

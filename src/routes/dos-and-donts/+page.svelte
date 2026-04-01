@@ -16,16 +16,17 @@
 >
   <HomeHeroIcon slot="icon" />
   <svelte:fragment>
-    <p class="text-white font-medium leading-5">
+    <p class="text-white font-light leading-5">
       Key principles to consider when developing strategies and policies on (generative) AI and
       digital technologies. Click <a
         href="https://rfom.osce.org/representative-on-freedom-of-media/510332"
-        class="underline">here</a
+        class="underline font-bold">HERE</a
       >
       for more recommendations on safeguarding freedom of expression in the use of AI for content governance,
       and
-      <a href="https://rfom.osce.org/representative-on-freedom-of-media/598525" class="underline"
-        >here</a
+      <a
+        href="https://rfom.osce.org/representative-on-freedom-of-media/598525"
+        class="underline font-bold">HERE</a
       >
       for recommendations on promoting media freedom and public interest journalism in the age of Big
       Tech and AI.
