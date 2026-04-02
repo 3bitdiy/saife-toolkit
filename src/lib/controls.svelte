@@ -61,13 +61,13 @@
 
   {#if isOpen}
     <div
-      class="absolute right-0 top-[60px] w-screen sm:w-[463px] py-4 px-4 bg-white flex flex-col gap-3 z-50 overflow-y-auto max-h-[calc(100vh-60px)] sm:max-h-none"
+      class="absolute right-0 top-[60px] w-screen sm:w-[463px] py-4 px-2 sm:px-4 bg-white flex flex-col gap-2 sm:gap-3 z-50 overflow-y-auto max-h-[calc(100vh-60px)] sm:max-h-none"
     >
       {#each menuItems as item}
         {#if item.type === "item"}
           <a
             href={item.href}
-            class={"menu-link !block min-w-full max-[411px]:max-w-[325px] box-border border-2 border-solid border-blue-osce rounded-lg font-bold py-1.5 px-3 sm:py-2 sm:px-4 text-sm min-[412px]:text-base transition-colors text-left " +
+            class={"menu-link !block min-w-full box-border border-2 border-solid border-blue-osce rounded-lg font-bold py-1 px-2 sm:py-2 sm:px-4 text-xs min-[412px]:text-sm sm:text-base transition-colors text-left " +
               ($page.url.pathname === item.href
                 ? "bg-blue-osce text-white"
                 : "bg-white text-blue-osce hover:bg-blue-osce hover:text-white")}
