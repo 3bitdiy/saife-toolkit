@@ -1,0 +1,63 @@
+<script lang="ts">
+  import c from "clsx";
+
+  let clazz = "";
+  export {clazz as class};
+</script>
+
+<svg class={c(clazz)} viewBox="0 0 395 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#filter0_d_5340_4703)">
+    <rect x="4" width="387" height="250" rx="10" fill="#154678" />
+    <g filter="url(#filter1_d_5340_4703)">
+      <rect x="118.571" y="88.9258" width="71.152" height="71.152" rx="8.894" fill="#059669" />
+      <g clip-path="url(#clip0_5340_4703)">
+        <path d="M154.147 108.197C163.152 108.197 170.453 115.498 170.453 124.503C170.453 133.508 163.152 140.809 154.147 140.809C145.142 140.809 137.841 133.508 137.841 124.503C137.841 115.498 145.142 108.197 154.147 108.197Z" stroke="white" stroke-width="2.96467" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+    <g filter="url(#filter2_d_5340_4703)">
+      <rect x="205.277" y="88.9258" width="71.152" height="71.152" rx="8.894" fill="#F43F5E" />
+      <g clip-path="url(#clip1_5340_4703)">
+        <path d="M231.959 133.397L249.747 115.609M231.959 115.609L249.747 133.397" stroke="white" stroke-width="2.96467" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <rect x="224.547" y="108.197" width="32.6113" height="32.6113" rx="7.41167" stroke="white" stroke-width="2.96467" />
+    </g>
+  </g>
+  <defs>
+    <filter id="filter0_d_5340_4703" x="0" y="0" width="395" height="258" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="4" />
+      <feGaussianBlur stdDeviation="2" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5340_4703" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5340_4703" result="shape" />
+    </filter>
+    <filter id="filter1_d_5340_4703" x="114.479" y="88.9258" width="79.3371" height="79.3375" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="4.0926" />
+      <feGaussianBlur stdDeviation="2.0463" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5340_4703" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5340_4703" result="shape" />
+    </filter>
+    <filter id="filter2_d_5340_4703" x="201.184" y="88.9258" width="79.3371" height="79.3375" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="4.0926" />
+      <feGaussianBlur stdDeviation="2.0463" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5340_4703" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5340_4703" result="shape" />
+    </filter>
+    <clipPath id="clip0_5340_4703">
+      <rect width="35.576" height="35.576" fill="white" transform="translate(136.359 106.715)" />
+    </clipPath>
+    <clipPath id="clip1_5340_4703">
+      <rect x="223.065" y="106.715" width="35.576" height="35.576" rx="8.894" fill="white" />
+    </clipPath>
+  </defs>
+</svg>

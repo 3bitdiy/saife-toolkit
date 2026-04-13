@@ -2,15 +2,15 @@
   import policyManualImage2025 from "$lib/assets/policy-manual-2025.png";
   import conferenceImage2025 from "$lib/assets/conference-2025.png";
   import policyManualImage from "$lib/assets/policy-manual-2022.png";
-  import resourcesImage from "$lib/assets/resources.png";
-  import dosAndDontsImage from "$lib/assets/dos-and-donts.png";
   import madeToMeasureImage from "$lib/assets/made-to-measure.png";
   import expeditionImage from "$lib/assets/saife-expedition.png";
   import saifeLogo from "$lib/assets/saife-logo.svg";
   import Chevron from "$lib/chevron.svelte";
+  import DosAndDontsIcon from "$lib/dos-and-donts-icon.svelte";
   import GlossaryIcon from "$lib/glossary-icon.svelte";
   import Header from "$lib/header.svelte";
   import HomeGlossaryBox from "$lib/home-glossary-box.svelte";
+  import ResourcesIcon from "$lib/resources-icon.svelte";
   import ShadowBox from "$lib/shadow-box.svelte";
   import {base} from "$app/paths";
   const conferenceTitle = `Conference on \u201cHealthy Online Information Spaces: From Policy Guidance to Pathways Forward\u201d`;
@@ -22,16 +22,15 @@
       <h1 class="font-bold text-2xl sm:text-3xl lg:text-[2rem] leading-none tracking-wide">
         RESOURCE HUB
       </h1>
-      <p class="text-2xl sm:text-3xl lg:text-[2rem] leading-snug lg:leading-none tracking-wide mt-3">
-        TOWARDS <span class="font-bold">HEALTHY</span> ONLINE <span class="font-bold">INFORMATION</span> SPACES
+      <p
+        class="text-2xl sm:text-3xl lg:text-[2rem] leading-snug lg:leading-none tracking-wide mt-3"
+      >
+        TOWARDS <span class="font-bold">HEALTHY</span> ONLINE
+        <span class="font-bold">INFORMATION</span> SPACES
       </p>
     </div>
 
-    <img
-      alt="SAIFE Toolkit Logo"
-      src={saifeLogo}
-      class="mt-6 h-20 sm:h-24 lg:hidden"
-    />
+    <img alt="SAIFE Toolkit Logo" src={saifeLogo} class="mt-6 h-20 sm:h-24 lg:hidden" />
   </div>
 
   <svelte:fragment slot="overlay">
@@ -108,12 +107,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 mt-12 gap-x-6 gap-y-10">
         <HomeGlossaryBox title="Resources" href={`${base}/resources`}>
-          <img
-            slot="image"
-            class="w-full aspect-[395/238] rounded-xl object-cover"
-            src={resourcesImage}
-            alt="Resources"
-          />
+          <ResourcesIcon slot="image" class="w-full h-full rounded-xl" />
           <p slot="description">
             Research, podcasts, explainers, and other materials examining the effects of AI on
             online expression, media pluralism, and access to information.
@@ -121,12 +115,7 @@
         </HomeGlossaryBox>
 
         <HomeGlossaryBox title="Dos and Don’ts" href={`${base}/dos-and-donts`}>
-          <img
-            slot="image"
-            class="w-full aspect-[395/238] rounded-xl object-cover"
-            src={dosAndDontsImage}
-            alt="Dos and Don’ts"
-          />
+          <DosAndDontsIcon slot="image" class="w-full h-full rounded-xl" />
           <p slot="description">
             Recommended actions, restrictions, and guidelines for designing human rights-respecting
             policies on (generative) AI and digital technologies.
